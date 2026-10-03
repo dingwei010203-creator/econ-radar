@@ -24,12 +24,12 @@ function validateJob(x){
  return j;
 }
 function duplicate(a,b){if(a.source&&b.source&&a.source!=='手动添加'&&a.source===b.source)return true;return ['school','department','role'].every(k=>(a[k]||'').trim().toLowerCase()===(b[k]||'').trim().toLowerCase());}
-function tasks(jobs,now=today()){
+function tasks(jobs,now=today(),horizon=14){
  const list=[];
  for(const j of jobs){if(['已结束','已获 Offer'].includes(j.stage))continue;
   const targets=[['followupAt','跟进'],['interviewAt',j.stage==='Job talk'?'Job talk':'面试'],['referenceDue','推荐信']];
   if(['待准备','准备材料'].includes(j.stage))targets.push(['deadline','投递截止']);
-  for(const [key,label] of targets){if(key==='referenceDue'&&j.referenceState==='已完成')continue;const d=days(j[key],now);if(d!==null&&d<=14)list.push({id:j.id,school:j.school,date:j[key],label,days:d});}
+  for(const [key,label] of targets){if(key==='referenceDue'&&j.referenceState==='已完成')continue;const d=days(j[key],now);if(d!==null&&d<=horizon)list.push({id:j.id,school:j.school,date:j[key],label,days:d});}
  }
  return list.sort((a,b)=>a.date.localeCompare(b.date));
 }
@@ -47,6 +47,13 @@ function importCSV(text){
  if(!heads.includes('school'))throw Error('找不到“学校”列，请使用提供的 CSV 模板');
  return rows.slice(1).map((r,i)=>{const j=newJob({source:'CSV 导入'});r.forEach((v,k)=>{if(heads[k])j[heads[k]]=v.trim();});if(!j.stage)j.stage='待准备';try{return validateJob(j);}catch(e){throw Error('第 '+(i+2)+' 行：'+e.message);}});
 }
-function backup(text){const x=JSON.parse(text);if(x.version!==1||!Array.isArray(x.jobs)||x.jobs.length>10000)throw Error('不是有效的求职备份');const jobs=x.jobs.map(validateJob);if(new Set(jobs.map(j=>j.id)).size!==jobs.length)throw Error('备份有重复编号');return {jobs,hidden:Array.isArray(x.hidden)?x.hidden.filter(s=>typeof s==='string').slice(0,10000):[],keywords:typeof x.keywords==='string'?x.keywords.slice(0,1000):''};}
-root.RadarCore={stages,materials,today,validDate,days,safeURL,id,newJob,validateJob,duplicate,tasks,csv,parseCSV,importCSV,backup};
+function plannerRows(rows,kind){
+ if(rows===undefined)return [];
+ if(!Array.isArray(rows)||rows.length>10000)throw Error('日程或咨询记录格式无效');
+ const keys=kind==='events'?['id','title','date','time','category','jobId','conferenceId','notes']:['id','person','date','institution','topic','notes','nextAction','followupAt','jobId'];
+ const out=rows.map(x=>{if(!x||typeof x!=='object'||Array.isArray(x))throw Error('记录格式无效');const y={};for(const k of keys){if(x[k]!==undefined&&(typeof x[k]!=='string'||x[k].length>20000))throw Error('字段格式无效：'+k);y[k]=x[k]||'';}if(!y.id||y.id.length>150)throw Error('记录编号无效');if(!(kind==='events'?y.title.trim():y.person.trim()))throw Error(kind==='events'?'请填写日程名称':'请填写咨询对象');for(const k of ['date','followupAt'])if(y[k]&&!validDate(y[k]))throw Error('日期无效');if(kind==='events'){if(!validDate(y.date))throw Error('请填写日程日期');if(y.time&&!/^([01]\d|2[0-3]):[0-5]\d$/.test(y.time))throw Error('时间无效');y.done=x.done===true;}return y;});
+ if(new Set(out.map(x=>x.id)).size!==out.length)throw Error('记录编号重复');return out;
+}
+function backup(text){const x=JSON.parse(text);if(x.version!==1||!Array.isArray(x.jobs)||x.jobs.length>10000)throw Error('不是有效的求职备份');const jobs=x.jobs.map(validateJob);if(new Set(jobs.map(j=>j.id)).size!==jobs.length)throw Error('备份有重复编号');return {jobs,events:plannerRows(x.events,'events'),consultations:plannerRows(x.consultations,'consultations'),hidden:Array.isArray(x.hidden)?x.hidden.filter(s=>typeof s==='string').slice(0,10000):[],keywords:typeof x.keywords==='string'?x.keywords.slice(0,1000):''};}
+root.RadarCore={stages,materials,today,validDate,days,safeURL,id,newJob,validateJob,duplicate,tasks,csv,parseCSV,importCSV,backup,plannerRows};
 })(typeof window==='object'?window:globalThis);
