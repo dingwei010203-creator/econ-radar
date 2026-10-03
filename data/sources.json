@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bnu-ssdpp",
+    "name": "北京师范大学 · 社会发展与公共政策学院",
+    "url": "https://ssdpp.bnu.edu.cn/mtsf/index.html",
+    "enabled": true
+  },
+  {
+    "id": "bit-humanities",
+    "name": "北京理工大学 · 人文与社会科学学院",
+    "url": "https://rw.bit.edu.cn/szdw/rczp/index.htm",
+    "enabled": true
+  },
+  {
+    "id": "bnu-business",
+    "name": "北京师范大学 · 经济与工商管理学院",
+    "url": "http://bs.bnu.edu.cn/bshzs/index.html",
+    "enabled": true
+  }
+]
