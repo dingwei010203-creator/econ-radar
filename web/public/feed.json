@@ -1,15 +1,20 @@
 {
   "items": [
     {
+      "id": "4483cc67ca4866b74e111ae5",
       "title": "应用经济学院诚聘英才！",
       "url": "https://ae.ruc.edu.cn/xwzx/tzgg/6add39980093433cb592831bc2eac507.htm",
       "sourceId": "ruc-ae",
       "sourceName": "中国人民大学 · 应用经济学院",
-      "publishedAt": "2024-12-03",
+      "sourceIds": [
+        "ruc-ae"
+      ],
+      "firstSeenAt": "2026-10-09T06:56:14.023Z",
+      "lastSeenAt": "2026-10-09T06:56:14.023Z",
+      "verification": "2026-10-09 人工核对官方原文（非采集器成功记录）",
       "deadline": "",
+      "publishedAt": "2024-12-03",
       "jobType": "学术岗位",
-      "ongoing": true,
-      "status": "原文声明常年有效",
       "dateStatus": "原文声明常年有效，联系院系确认当年安排",
       "dateEvidence": [
         {
@@ -17,25 +22,26 @@
           "text": "发文时间：2024-12-03"
         }
       ],
-      "id": "4483cc67ca4866b74e111ae5",
-      "sourceIds": [
-        "ruc-ae"
-      ],
-      "firstSeenAt": "2026-10-09T06:56:14.023Z",
-      "lastSeenAt": "2026-10-09T06:56:14.023Z",
-      "verification": "2026-10-09 人工核对官方原文（非采集器成功记录）",
+      "status": "原文声明常年有效",
+      "detailCheckedAt": "2026-10-09T06:56:14.023Z",
       "detailStatus": "人工核对官方原文",
-      "detailCheckedAt": "2026-10-09T06:56:14.023Z"
+      "ongoing": true
     },
     {
+      "id": "ed14a621fab8f1ca21222f4a",
       "title": "中国社会科学院2026年度公开招聘第二批专业技术人员公告",
       "url": "https://www.cass.cn/tongzhigonggao/202605/t20260523_5992953.shtml",
       "sourceId": "cass-central",
       "sourceName": "中国社会科学院 · 全院招聘公告",
-      "publishedAt": "2026-05-23",
+      "sourceIds": [
+        "cass-central"
+      ],
+      "firstSeenAt": "2026-10-09T06:56:14.023Z",
+      "lastSeenAt": "2026-10-09T06:56:14.023Z",
+      "verification": "2026-10-09 人工核对官方原文（非采集器成功记录）",
       "deadline": "2026-06-05",
+      "publishedAt": "2026-05-23",
       "jobType": "性质待核实",
-      "status": "已截止",
       "dateStatus": "需查看附件岗位表；本轮已截止",
       "dateEvidence": [
         {
@@ -47,15 +53,9 @@
           "text": "自2026年5月23日起至2026年6月5日17：00"
         }
       ],
-      "id": "ed14a621fab8f1ca21222f4a",
-      "sourceIds": [
-        "cass-central"
-      ],
-      "firstSeenAt": "2026-10-09T06:56:14.023Z",
-      "lastSeenAt": "2026-10-09T06:56:14.023Z",
-      "verification": "2026-10-09 人工核对官方原文（非采集器成功记录）",
-      "detailStatus": "人工核对官方原文",
-      "detailCheckedAt": "2026-10-09T06:56:14.023Z"
+      "status": "已截止",
+      "detailCheckedAt": "2026-10-09T06:56:14.023Z",
+      "detailStatus": "人工核对官方原文"
     }
   ],
   "runs": [
