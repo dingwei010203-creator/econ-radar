@@ -1,0 +1,53 @@
+name: Recruitment snapshot and Pages
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: recruitment-pages
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test
+      - name: Scan official sources
+        id: scan
+        continue-on-error: true
+        run: node scripts/scan.mjs
+      - name: Commit public snapshot only
+        run: |
+          git config user.name 'econ-radar-bot'
+          git config user.email 'econ-radar-bot@users.noreply.github.com'
+          git add web/public/feed.json web/public/sources.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update public recruitment snapshot'
+            git push
+          fi
+      - run: node scripts/build-pages.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Report scan failure
+        if: steps.scan.outcome == 'failure'
+        run: echo '::warning::Sources failed; review source status in the snapshot. Scan completion is not evidence of recruitment availability.'
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

@@ -1,0 +1,5 @@
+dist/
+*.tmp
+*求职备份*.json
+*我的投递*.csv
+private/

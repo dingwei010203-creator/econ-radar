@@ -1,0 +1,13 @@
+import {createCollector,atomicJSON} from '../collector.mjs';
+import {publicFeed} from './public-feed.mjs';
+import {readFile,mkdir} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url));
+await createCollector(root).scan();
+const feed=publicFeed(JSON.parse(await readFile(new URL('../data/feed.json',import.meta.url),'utf8')));
+await mkdir(new URL('../web/public/',import.meta.url),{recursive:true});
+await atomicJSON(fileURLToPath(new URL('../web/public/feed.json',import.meta.url)),feed);
+const sources=JSON.parse(await readFile(new URL('../data/sources.json',import.meta.url),'utf8')).map(({id,name,url,enabled})=>({id,name,url,enabled}));
+await atomicJSON(fileURLToPath(new URL('../web/public/sources.json',import.meta.url)),sources);
+console.log(JSON.stringify({items:feed.items.length,sources:feed.runs.length,failed:feed.runs.filter(x=>x.status==='读取失败').length}));
+if(feed.runs.every(x=>x.status==='读取失败'))process.exitCode=2;
