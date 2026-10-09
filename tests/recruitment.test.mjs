@@ -65,3 +65,14 @@ test('Pages build includes only public assets and strips historical private refe
  assert.equal(await readFile('dist/web/reference-data.js','utf8'),'window.RADAR_SEED={references:[],resources:[],links:[]};\n');
  const feed=JSON.parse(await readFile('dist/web/public/feed.json'));assert.ok(Array.isArray(feed.items));assert.ok(Array.isArray(feed.runs));
 });
+test('detail limit rotates to previously unvisited notices on the next scan',async()=>{
+ const root=await mkdtemp(path.join(os.tmpdir(),'radar-rotate-'));
+ try{
+  await mkdir(path.join(root,'data'));await writeFile(path.join(root,'data/sources.json'),JSON.stringify([{id:'a',name:'A',url:'https://test.edu.cn/list',enabled:true}]));await writeFile(path.join(root,'data/feed.json'),JSON.stringify({items:[],runs:[]}));
+  const visited=[];const collector=createCollector(root,async url=>{
+   if(url.endsWith('/list'))return {url,html:[1,2,3,4,5].map(n=>`<a href="/job${n}">2026年经济学院教师招聘公告${n}</a>`).join('')};
+   visited.push(url);return {url,html:'教师岗位'};
+  });
+  await collector.scan();assert.equal(visited.length,4);await collector.scan();assert.ok(visited.includes('https://test.edu.cn/job5'));
+ }finally{await rm(root,{recursive:true,force:true});}
+});

@@ -74,7 +74,7 @@ export function createCollector(root,fetcher=getHTML){
      for(const [index,row] of rows.entries()){
       const old=map.get(row.id);let details={};
       try{if(index>=4)throw Error("本轮详情读取上限，等待下次扫描");const detail=await fetcher(row.url);details=extractDetails(detail.html,row.title);details.detailCheckedAt=new Date().toISOString();details.detailStatus='已读取';}
-      catch(e){detailFailures++;details={detailStatus:'读取失败',detailError:e.message,detailCheckedAt:new Date().toISOString()};}
+      catch(e){if(index<4)detailFailures++;details=index>=4?{detailStatus:'本轮未读取'}:{detailStatus:'读取失败',detailError:e.message,detailCheckedAt:new Date().toISOString()};}
       map.set(row.id,{...row,...old,title:row.title,lastSeenAt:row.lastSeenAt,...details,firstSeenAt:old?.firstSeenAt||row.firstSeenAt,sourceIds:[...new Set([...(old?.sourceIds||[]),source.id])]});if(!old)added++;
      }
      runs.push({sourceId:source.id,name:source.name,at:new Date().toISOString(),status:rows.length?'已读取':'未提取到招聘链接',found:rows.length,added,detailFailures,message:rows.length?'标题命中不代表当前仍在招聘，请打开原文核实。':'网页可能需要登录、动态加载，或页面没有可识别的招聘链接。请人工核对。'});
@@ -107,7 +107,7 @@ export function validDate(s){return /^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN
 const datePattern='(20\\d{2})\\s*[年./-]\\s*(\\d{1,2})\\s*[月./-]\\s*(\\d{1,2})\\s*日?';
 function dates(text){return [...text.matchAll(new RegExp(datePattern,'g'))].map(m=>({date:`${m[1]}-${m[2].padStart(2,'0')}-${m[3].padStart(2,'0')}`,raw:m[0]})).filter(x=>validDate(x.date));}
 export function extractDetails(html,title){
- const clean=html.replace(/<(script|style|nav|footer)\b[^>]*>[^]*?<\/\1>/gi,'');
+ const clean=html.replace(/<head\b[^>]*>[^]*?<\/head>/gi,'').replace(/<(script|style|nav|footer)\b[^>]*>[^]*?<\/\1>/gi,'');
  // Prefer an article block, never derive a publication date from copyright/footer years.
  const article=(clean.match(/<article\b[^>]*>([^]*?)<\/article>/i)||[])[1]||clean;
  const fullText=plain(article);const titleIndex=fullText.indexOf(title);const text=titleIndex>=0?fullText.slice(titleIndex+title.length):fullText;const dateEvidence=[];
