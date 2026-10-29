@@ -4,6 +4,42 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-10-29T11:58:01+08:00",
   "items": [
     {
+      "id": "nidd-digital-economy-2026",
+      "title": "国家数据发展研究院：数字经济研究岗",
+      "sourceName": "国家数据发展研究院 · 智联招聘",
+      "url": "https://www.zhaopin.com/jobdetail/CCL1493930120J40896104110.htm",
+      "firstSeenAt": "2026-10-29T16:28:06+08:00",
+      "checkedAt": "2026-10-29T16:28:06+08:00",
+      "status": "平台显示在招，条件待核",
+      "verification": "招聘平台发布",
+      "deadline": null,
+      "summary": "北京西城；平台显示硕士、经验不限，专业包括经济学类（02）。研究数字经济和数字社会政策、投融资及监测等。岗位截止时间、户籍要求、用工与编制性质请向单位核实。"
+    },
+    {
+      "id": "nidd-digital-talent-2026",
+      "title": "国家数据发展研究院：数据科技创新研究岗（数字人才方向）",
+      "sourceName": "国家数据发展研究院 · 智联招聘",
+      "url": "https://www.zhaopin.com/jobdetail/CCL1493930120J40896112410.htm",
+      "firstSeenAt": "2026-10-29T16:28:06+08:00",
+      "checkedAt": "2026-10-29T16:28:06+08:00",
+      "status": "平台显示在招，条件待核",
+      "verification": "招聘平台发布",
+      "deadline": null,
+      "summary": "北京西城；平台显示硕士、经验不限、招2人，专业列有应用经济学（0202）、管理学和教育学等。研究数字人才、教育培训、能力评价与政策。截止时间、专业代码适用性及用工与编制性质请核实。"
+    },
+    {
+      "id": "nidd-data-theory-2026",
+      "title": "国家数据发展研究院：数据理论研究岗",
+      "sourceName": "国家数据发展研究院 · 智联招聘",
+      "url": "https://www.zhaopin.com/jobdetail/CCL1493930120J40896092410.htm",
+      "firstSeenAt": "2026-10-29T16:28:06+08:00",
+      "checkedAt": "2026-10-29T16:28:06+08:00",
+      "status": "平台显示在招，条件待核",
+      "verification": "招聘平台发布",
+      "deadline": null,
+      "summary": "北京西城；平台显示硕士、经验不限，专业包括经济学类（02）。研究数据产权、数据基础制度、数据市场及数字经济政策。截止时间、户籍要求和用工与编制性质请核实。"
+    },
+    {
       "id": "cifcm-2026-research",
       "title": "中证金融研究院：经济金融类研究岗（校招与社招）",
       "sourceName": "中证金融研究院",
