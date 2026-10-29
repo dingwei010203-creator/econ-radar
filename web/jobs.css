@@ -2,3 +2,7 @@
 
 /* Schedule and consultation views */
 .task-date small{display:block;font-size:11px;margin-top:5px}.record-text{white-space:pre-wrap;overflow-wrap:anywhere;max-height:240px;overflow:auto}.upcoming{padding:16px 0;border-bottom:1px solid var(--line,#e5e7eb)}.upcoming h3{margin:10px 0;font-size:15px;line-height:1.6}.completed{margin-top:20px;color:#64748b}.completed summary{cursor:pointer;padding:12px 0}.range-tabs{flex-wrap:wrap}.task .grow{min-width:0;overflow-wrap:anywhere}.card h3{overflow-wrap:anywhere}.card-actions{flex-wrap:wrap}#planner-editor{width:min(760px,calc(100vw - 32px));max-height:90vh;overflow:auto}#planner-editor textarea{resize:vertical}@media(max-width:700px){.task{flex-wrap:wrap;gap:10px}.task .grow{flex-basis:calc(100% - 80px)}.range-tabs .spacer{display:none}.stats{grid-template-columns:repeat(2,1fr)}.panel-head{flex-wrap:wrap;gap:10px}.toolbar input{min-width:0}.cards{grid-template-columns:1fr}}
+
+/* Keep the recruitment entry easy to find, including on narrow screens. */
+nav button.nav-featured { font-weight: 700; border: 1px solid #bdd3c3; background: #e3ece2; color: var(--ink); }
+nav button.nav-featured.active { color: #fff; border-color: var(--ink); background: var(--ink); }
