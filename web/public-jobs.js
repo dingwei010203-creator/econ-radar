@@ -1,8 +1,22 @@
 /* Public recruitment information only. Do not add personal records. */
 window.RADAR_PUBLIC_JOBS={
   "version": 1,
-  "lastCompletedAt": "2026-10-29T11:58:01+08:00",
+  "lastCompletedAt": "2026-10-30T08:20:00+08:00",
   "items": [
+    {
+      "id": "ruc-sociology-2027",
+      "title": "中国人民大学社会学院：2027年度教师岗位",
+      "sourceName": "中国人民大学社会学院",
+      "url": "https://ssr.ruc.edu.cn/tzgg/1030f32299c0497cae438671c9774e1a.htm",
+      "publishedAt": "2026-10-16",
+      "firstSeenAt": "2026-10-30T08:20:00+08:00",
+      "checkedAt": "2026-10-30T08:20:00+08:00",
+      "status": "岗位有效期临近",
+      "verification": "学院官网",
+      "deadline": "2026-11-06",
+      "deadlineLabel": "岗位有效期",
+      "summary": "北京；招聘1名教师，方向包括社会治理、社会工作及社会政策，要求优秀国内应届博士，一般不超过38周岁；专业列社会学、管理学、统计学、计算机科学与技术。经济学专业及博士后身份是否符合须核实。"
+    },
     {
       "id": "nidd-digital-economy-2026",
       "title": "国家数据发展研究院：数字经济研究岗",
@@ -69,16 +83,16 @@ window.RADAR_PUBLIC_JOBS={
     {
       "id": "guokao-2027",
       "title": "2027年度国考：报名确认与后续考试",
-      "sourceName": "国家公务员局 · 新华网转载公告",
-      "url": "https://www3.xinhuanet.com/edu/20261013/ce6bf7dc36474dd68ecd90aa8b722f06/c.html",
+      "sourceName": "国家税务总局上海市税务局 · 报考指南",
+      "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481764.html",
       "publishedAt": "2026-10-13",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-10-29T11:58:01+08:00",
-      "status": "报名已结束",
-      "verification": "国家公务员局公告转载",
+      "checkedAt": "2026-10-30T08:20:00+08:00",
+      "status": "报名已结束，确认缴费即将开始",
+      "verification": "官方转载报考指南",
       "deadline": "2026-11-06",
       "deadlineLabel": "通过资格审查人员报名确认及缴费截止",
-      "summary": "报名已于10月24日结束；通过资格审查者于11月1日0时至11月6日24时确认并缴费，11月29日公共科目笔试。具体岗位及资格以招考简章为准。"
+      "summary": "通过资格审查人员11月1日0时至11月6日24时网上确认并缴费；11月23日0时至11月29日15时打印准考证，11月29日公共科目笔试。岗位条件以招考简章为准。"
     },
     {
       "id": "bnu-business-2026",
@@ -107,5 +121,10 @@ window.RADAR_PUBLIC_JOBS={
       "summary": "学校年度公告称学术岗具体报名时间以各岗位发布为准；这是一则招聘总公告，经济学相关岗位及当前是否开放需到学校招聘系统核实。"
     }
   ],
-  "runs": []
+  "runs": [
+    {
+      "checkedAt": "2026-10-30T08:20:00+08:00",
+      "summary": "检索重点院校、社科院招聘与国考；部分具体岗位状态和平台招聘须进一步核实。"
+    }
+  ]
 };
