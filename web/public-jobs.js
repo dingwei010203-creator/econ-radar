@@ -1,8 +1,21 @@
 /* Public recruitment information only. Do not add personal records. */
 window.RADAR_PUBLIC_JOBS={
   "version": 1,
-  "lastCompletedAt": "2026-10-30T08:20:00+08:00",
+  "lastCompletedAt": "2026-10-31T08:25:50.000+08:00",
   "items": [
+    {
+      "id": "pku-econ-faculty-2027",
+      "title": "北京大学经济学院：2027年经济学教职招聘",
+      "sourceName": "北京大学经济学院",
+      "url": "https://econ.pku.edu.cn/tzgg/50170econ391389.htm",
+      "firstSeenAt": "2026-10-31T08:25:50.000+08:00",
+      "checkedAt": "2026-10-31T08:25:50.000+08:00",
+      "status": "申请开放状态待核",
+      "verification": "学院官网；网页发布时间与招聘年度存在疑点",
+      "deadline": "2026-11-30",
+      "deadlineLabel": "北京时间8时前申请以获得充分考虑",
+      "summary": "北京；助理或副教授，偏好公共财政、金融经济学等；助理教授须于2027年8月前取得或预期取得博士学位。需简历、求职论文及三封推荐信。网页发布时间显示2025-10-10，与2027招聘内容存在时间疑点，招聘状态待核。"
+    },
     {
       "id": "ruc-sociology-2027",
       "title": "中国人民大学社会学院：2027年度教师岗位",
@@ -125,6 +138,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-10-30T08:20:00+08:00",
       "summary": "检索重点院校、社科院招聘与国考；部分具体岗位状态和平台招聘须进一步核实。"
+    },
+    {
+      "checkedAt": "2026-10-31T08:25:50.000+08:00",
+      "summary": "检索重点机构招聘、国考及相关会议；部分单位岗位系统、30人论坛本届原文及平台岗位状态未能核实。"
     }
   ]
 };
