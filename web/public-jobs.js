@@ -1,8 +1,22 @@
 /* Public recruitment information only. Do not add personal records. */
 window.RADAR_PUBLIC_JOBS={
   "version": 1,
-  "lastCompletedAt": "2026-10-31T08:25:50.000+08:00",
+  "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
+    {
+      "id": "pku-nsd-isscad-faculty-2027",
+      "title": "北京大学国家发展研究院、南南合作与发展学院：2027年教师招聘",
+      "sourceName": "北京大学国家发展研究院",
+      "url": "https://nsd.pku.edu.cn/sylm/xw/024418697d1c4c21b09deafb7e90c83e.htm",
+      "publishedAt": "2026-10-02",
+      "firstSeenAt": "2026-11-01T08:22:14+08:00",
+      "checkedAt": "2026-11-01T08:22:14+08:00",
+      "status": "招聘公告发布，截止日期临近",
+      "verification": "学院官网",
+      "deadline": "2026-11-20",
+      "deadlineLabel": "北京时间申请截止",
+      "summary": "北京；招聘经济学、政治学、公共政策各职级教师，拟2027年9月入职。须已获相关博士学位或入职前获得；欢迎应届博士及具有突出研究教学成果的资深学者。通过AEA JOE提交求职信、简历、求职论文及其他代表作和三封推荐信；博士后出站身份具体条件未单列。"
+    },
     {
       "id": "pku-econ-faculty-2027",
       "title": "北京大学经济学院：2027年经济学教职招聘",
@@ -98,10 +112,10 @@ window.RADAR_PUBLIC_JOBS={
       "title": "2027年度国考：报名确认与后续考试",
       "sourceName": "国家税务总局上海市税务局 · 报考指南",
       "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481764.html",
-      "publishedAt": "2026-10-13",
+      "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-10-30T08:20:00+08:00",
-      "status": "报名已结束，确认缴费即将开始",
+      "checkedAt": "2026-11-01T08:22:14+08:00",
+      "status": "报名确认及缴费进行中",
       "verification": "官方转载报考指南",
       "deadline": "2026-11-06",
       "deadlineLabel": "通过资格审查人员报名确认及缴费截止",
@@ -142,6 +156,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-10-31T08:25:50.000+08:00",
       "summary": "检索重点机构招聘、国考及相关会议；部分单位岗位系统、30人论坛本届原文及平台岗位状态未能核实。"
+    },
+    {
+      "checkedAt": "2026-11-01T08:22:14+08:00",
+      "summary": "检索重点院校、社科院招聘、国考及相关会议；部分岗位系统和平台状态未能复核。"
     }
   ]
 };
