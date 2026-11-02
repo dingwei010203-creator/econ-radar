@@ -37,7 +37,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://ssr.ruc.edu.cn/tzgg/1030f32299c0497cae438671c9774e1a.htm",
       "publishedAt": "2026-10-16",
       "firstSeenAt": "2026-10-30T08:20:00+08:00",
-      "checkedAt": "2026-10-30T08:20:00+08:00",
+      "checkedAt": "2026-11-02T08:48:29+08:00",
       "status": "岗位有效期临近",
       "verification": "学院官网",
       "deadline": "2026-11-06",
@@ -87,7 +87,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.cifcm.cn/zzszyw/zzpxx/202610/27/2115004167436111873.html",
       "publishedAt": "2026-10-27",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-10-29T11:58:01+08:00",
+      "checkedAt": "2026-11-02T08:48:29+08:00",
       "status": "截止日期待核",
       "verification": "官方公告",
       "deadline": null,
@@ -100,7 +100,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.gaoxiaojob.com/announcement/detail/438384.html",
       "publishedAt": "2026-10-19",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-10-29T11:58:01+08:00",
+      "checkedAt": "2026-11-02T08:48:29+08:00",
       "status": "转载信息，待核实",
       "verification": "转载，待官方核验",
       "deadline": "2026-11-06",
@@ -114,7 +114,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481764.html",
       "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-01T08:22:14+08:00",
+      "checkedAt": "2026-11-02T08:48:29+08:00",
       "status": "报名确认及缴费进行中",
       "verification": "官方转载报考指南",
       "deadline": "2026-11-06",
@@ -160,6 +160,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-01T08:22:14+08:00",
       "summary": "检索重点院校、社科院招聘、国考及相关会议；部分岗位系统和平台状态未能复核。"
+    },
+    {
+      "checkedAt": "2026-11-02T08:48:29+08:00",
+      "summary": "部分检索：复核国考、人大社会学院及中证金融研究院公告和人大财金转载；部分岗位系统、会议原文及平台状态未全面核验。"
     }
   ]
 };
