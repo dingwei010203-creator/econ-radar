@@ -10,7 +10,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://nsd.pku.edu.cn/sylm/xw/024418697d1c4c21b09deafb7e90c83e.htm",
       "publishedAt": "2026-10-02",
       "firstSeenAt": "2026-11-01T08:22:14+08:00",
-      "checkedAt": "2026-11-01T08:22:14+08:00",
+      "checkedAt": "2026-11-03T08:37:51+08:00",
       "status": "招聘公告发布，截止日期临近",
       "verification": "学院官网",
       "deadline": "2026-11-20",
@@ -23,7 +23,7 @@ window.RADAR_PUBLIC_JOBS={
       "sourceName": "北京大学经济学院",
       "url": "https://econ.pku.edu.cn/tzgg/50170econ391389.htm",
       "firstSeenAt": "2026-10-31T08:25:50.000+08:00",
-      "checkedAt": "2026-10-31T08:25:50.000+08:00",
+      "checkedAt": "2026-11-03T08:37:51+08:00",
       "status": "申请开放状态待核",
       "verification": "学院官网；网页发布时间与招聘年度存在疑点",
       "deadline": "2026-11-30",
@@ -87,7 +87,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.cifcm.cn/zzszyw/zzpxx/202610/27/2115004167436111873.html",
       "publishedAt": "2026-10-27",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-02T08:48:29+08:00",
+      "checkedAt": "2026-11-03T08:37:51+08:00",
       "status": "截止日期待核",
       "verification": "官方公告",
       "deadline": null,
@@ -100,7 +100,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.gaoxiaojob.com/announcement/detail/438384.html",
       "publishedAt": "2026-10-19",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-02T08:48:29+08:00",
+      "checkedAt": "2026-11-03T08:37:51+08:00",
       "status": "转载信息，待核实",
       "verification": "转载，待官方核验",
       "deadline": "2026-11-06",
@@ -114,7 +114,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481764.html",
       "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-02T08:48:29+08:00",
+      "checkedAt": "2026-11-03T08:37:51+08:00",
       "status": "报名确认及缴费进行中",
       "verification": "官方转载报考指南",
       "deadline": "2026-11-06",
@@ -164,6 +164,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-02T08:48:29+08:00",
       "summary": "部分检索：复核国考、人大社会学院及中证金融研究院公告和人大财金转载；部分岗位系统、会议原文及平台状态未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-03T08:37:51+08:00",
+      "summary": "部分检索：复核国考、中证金融研究院、北大岗位和人大财金转载，并检索重点院校招聘及相关会议；部分岗位系统、平台状态及30人论坛原文未核实。"
     }
   ]
 };
