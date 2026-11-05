@@ -4,6 +4,34 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-staff-technical-2027",
+      "title": "中国人民大学：2027年度管理职员和专业技术人员招聘",
+      "sourceName": "中国人民大学人事部",
+      "url": "https://hr.ruc.edu.cn/bsjg/bwryglbgs/bwtzgg/176e33ad4d984dd3ac950994d88b18f1.htm",
+      "publishedAt": "2026-11-03",
+      "firstSeenAt": "2026-11-05T08:09:00+08:00",
+      "checkedAt": "2026-11-05T08:09:00+08:00",
+      "status": "报名即将开放",
+      "verification": "学校人事部官网；具体岗位附件待核",
+      "deadline": "2026-11-12",
+      "deadlineLabel": "17时网上报名截止",
+      "summary": "北京；面向2027年应届毕业生（含符合条件的择业期毕业生）及有工作经验的非应届毕业生；非应届专业技术岗位包括图书资料、编辑出版、工程和医疗卫生系列。管理职员一般要求中共党员；具体岗位专业及博士后身份条件须核对附件。11月5日24时开放报名。"
+    },
+    {
+      "id": "ruc-faculty-overview-2027",
+      "title": "中国人民大学：2027年度人才引进和教师招聘总公告线索",
+      "sourceName": "粉笔资讯（转载）",
+      "url": "https://beijing.fenbi.com/zhaokao/detail/0/470231952944128",
+      "publishedAt": "2026-11-04",
+      "firstSeenAt": "2026-11-05T08:09:00+08:00",
+      "checkedAt": "2026-11-05T08:09:00+08:00",
+      "status": "转载待官方核验",
+      "verification": "转载待官方核验；人大人事部列表尚未显示2027版原文",
+      "deadline": null,
+      "deadlineLabel": "未公布／待核实",
+      "summary": "转载列有经济、应用经济、财政金融、劳动人事、人口与健康及农业与农村发展等学院；具体岗位、博士后出站资格、户籍及截止日期须核验学校招聘系统。转载标注2026年11月4日；学校人事部列表仍显示2026年度教师招聘，年份存在核验缺口。"
+    },
+    {
       "id": "pku-nsd-isscad-faculty-2027",
       "title": "北京大学国家发展研究院、南南合作与发展学院：2027年教师招聘",
       "sourceName": "北京大学国家发展研究院",
@@ -37,7 +65,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://ssr.ruc.edu.cn/tzgg/1030f32299c0497cae438671c9774e1a.htm",
       "publishedAt": "2026-10-16",
       "firstSeenAt": "2026-10-30T08:20:00+08:00",
-      "checkedAt": "2026-11-04T08:55:00+08:00",
+      "checkedAt": "2026-11-05T08:09:00+08:00",
       "status": "岗位有效期临近",
       "verification": "学院官网",
       "deadline": "2026-11-06",
@@ -87,7 +115,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.cifcm.cn/zzszyw/zzpxx/202610/27/2115004167436111873.html",
       "publishedAt": "2026-10-27",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-03T08:37:51+08:00",
+      "checkedAt": "2026-11-05T08:09:00+08:00",
       "status": "截止日期待核",
       "verification": "官方公告",
       "deadline": null,
@@ -114,7 +142,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481764.html",
       "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-04T08:55:00+08:00",
+      "checkedAt": "2026-11-05T08:09:00+08:00",
       "status": "报名确认及缴费进行中",
       "verification": "官方转载报考指南",
       "deadline": "2026-11-06",
@@ -172,6 +200,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-04T08:55:00+08:00",
       "summary": "部分检索：复核国考报考指南、人大社会学院公告与财金学院转载，检索社科院及重点院校招聘和相关会议；部分岗位系统、平台状态与30人论坛原文未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-05T08:09:00+08:00",
+      "summary": "部分检索：核对人大管理及专业技术招聘、教师招聘转载、人大社会学院、国考及中证金融研究院；部分岗位附件、平台状态和会议通知未核实。"
     }
   ]
 };
