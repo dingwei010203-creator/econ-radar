@@ -11,7 +11,7 @@ window.RADAR_PUBLIC_JOBS={
       "publishedAt": "2026-11-03",
       "firstSeenAt": "2026-11-05T08:09:00+08:00",
       "checkedAt": "2026-11-05T08:09:00+08:00",
-      "status": "报名即将开放",
+      "status": "报名期进行中（具体岗位状态待核）",
       "verification": "学校人事部官网；具体岗位附件待核",
       "deadline": "2026-11-12",
       "deadlineLabel": "17时网上报名截止",
@@ -38,8 +38,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://nsd.pku.edu.cn/sylm/xw/024418697d1c4c21b09deafb7e90c83e.htm",
       "publishedAt": "2026-10-02",
       "firstSeenAt": "2026-11-01T08:22:14+08:00",
-      "checkedAt": "2026-11-03T08:37:51+08:00",
-      "status": "招聘公告发布，截止日期临近",
+      "checkedAt": "2026-11-06T00:55:07.000Z",
+      "status": "招聘公告发布，距申请截止14天",
       "verification": "学院官网",
       "deadline": "2026-11-20",
       "deadlineLabel": "北京时间申请截止",
@@ -65,8 +65,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://ssr.ruc.edu.cn/tzgg/1030f32299c0497cae438671c9774e1a.htm",
       "publishedAt": "2026-10-16",
       "firstSeenAt": "2026-10-30T08:20:00+08:00",
-      "checkedAt": "2026-11-05T08:09:00+08:00",
-      "status": "岗位有效期临近",
+      "checkedAt": "2026-11-06T00:55:07.000Z",
+      "status": "岗位有效期今天截止",
       "verification": "学院官网",
       "deadline": "2026-11-06",
       "deadlineLabel": "岗位有效期",
@@ -142,8 +142,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481764.html",
       "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-05T08:09:00+08:00",
-      "status": "报名确认及缴费进行中",
+      "checkedAt": "2026-11-06T00:55:07.000Z",
+      "status": "报名确认及缴费今天截止",
       "verification": "官方转载报考指南",
       "deadline": "2026-11-06",
       "deadlineLabel": "通过资格审查人员报名确认及缴费截止",
@@ -156,7 +156,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://bs.bnu.edu.cn/bshzs/e8dc0779c4714d7b937e7a7634f44d20.html",
       "publishedAt": "2026-04-14",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-10-29T11:58:01+08:00",
+      "checkedAt": "2026-11-06T00:55:07.000Z",
       "status": "当前招录状态待核",
       "verification": "学院官网",
       "deadline": null,
@@ -169,7 +169,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.cau.edu.cn/tzgg/7080fc338ac04c4c87c78e37531fef46.htm",
       "publishedAt": "2026-01-28",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-10-29T11:58:01+08:00",
+      "checkedAt": "2026-11-06T00:55:07.000Z",
       "status": "具体岗位待核",
       "verification": "学校官网",
       "deadline": null,
@@ -204,6 +204,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-05T08:09:00+08:00",
       "summary": "部分检索：核对人大管理及专业技术招聘、教师招聘转载、人大社会学院、国考及中证金融研究院；部分岗位附件、平台状态和会议通知未核实。"
+    },
+    {
+      "checkedAt": "2026-11-06T00:55:07.000Z",
+      "summary": "部分检索：核对国考、人大社会学院、北大国发院、北师大经管学院和中国农大招聘公告；检索社科院人口所、民大及相关会议。部分岗位系统、附件、平台状态及论坛本届通知仍未全面核验。"
     }
   ]
 };
