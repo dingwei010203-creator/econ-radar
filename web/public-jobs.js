@@ -39,7 +39,7 @@ window.RADAR_PUBLIC_JOBS={
       "publishedAt": "2026-10-02",
       "firstSeenAt": "2026-11-01T08:22:14+08:00",
       "checkedAt": "2026-11-06T00:55:07.000Z",
-      "status": "招聘公告发布，距申请截止14天",
+      "status": "公告所列申请截止日期为11月20日",
       "verification": "学院官网",
       "deadline": "2026-11-20",
       "deadlineLabel": "北京时间申请截止",
@@ -66,7 +66,7 @@ window.RADAR_PUBLIC_JOBS={
       "publishedAt": "2026-10-16",
       "firstSeenAt": "2026-10-30T08:20:00+08:00",
       "checkedAt": "2026-11-06T00:55:07.000Z",
-      "status": "岗位有效期今天截止",
+      "status": "公告所列岗位有效期已过；是否延期待核",
       "verification": "学院官网",
       "deadline": "2026-11-06",
       "deadlineLabel": "岗位有效期",
@@ -115,11 +115,11 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.cifcm.cn/zzszyw/zzpxx/202610/27/2115004167436111873.html",
       "publishedAt": "2026-10-27",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-05T08:09:00+08:00",
+      "checkedAt": "2026-11-07T00:47:47.000Z",
       "status": "截止日期待核",
       "verification": "官方公告",
       "deadline": null,
-      "summary": "校招与社招均设经济金融类研究岗，均要求博士；社招要求正式工作经历及复合专业背景或职业经历。公告未列截止日期，博士后经历是否符合须向招聘单位确认。"
+      "summary": "北京；校招经济金融类研究岗2人，社招同类研究岗3人，均要求博士；社招要求正式工作经历及复合专业背景或职业经历，年龄不超过38岁（1988年1月1日以后出生）。公告未列截止日期，博士后经历是否符合须核实。"
     },
     {
       "id": "ruc-finance-2027",
@@ -129,7 +129,7 @@ window.RADAR_PUBLIC_JOBS={
       "publishedAt": "2026-10-19",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
       "checkedAt": "2026-11-04T08:55:00+08:00",
-      "status": "转载信息，待核实",
+      "status": "转载所列有效期已过；官方状态待核",
       "verification": "转载，待官方核验",
       "deadline": "2026-11-06",
       "deadlineLabel": "转载所列岗位有效期",
@@ -143,7 +143,7 @@ window.RADAR_PUBLIC_JOBS={
       "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
       "checkedAt": "2026-11-06T00:55:07.000Z",
-      "status": "报名确认及缴费今天截止",
+      "status": "报名确认及缴费已结束；待打印准考证",
       "verification": "官方转载报考指南",
       "deadline": "2026-11-06",
       "deadlineLabel": "通过资格审查人员报名确认及缴费截止",
@@ -208,6 +208,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-06T00:55:07.000Z",
       "summary": "部分检索：核对国考、人大社会学院、北大国发院、北师大经管学院和中国农大招聘公告；检索社科院人口所、民大及相关会议。部分岗位系统、附件、平台状态及论坛本届通知仍未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-07T00:47:47.000Z",
+      "summary": "部分检索社科院人口所、人大、北师大、农大、中央民大及相关会议；复核中证金融研究院招聘，部分岗位系统、附件和会议原文未能全面核验。"
     }
   ]
 };
