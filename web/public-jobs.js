@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-info-resources-faculty-2027",
+      "title": "中国人民大学信息资源管理学院：2027教师岗位",
+      "sourceName": "中国人民大学信息资源管理学院",
+      "url": "https://irm.ruc.edu.cn/xydt/tzgg/0117f50a5b274dcf845e243d39a72bec.htm",
+      "publishedAt": "2026-11-10",
+      "firstSeenAt": "2026-11-11T00:37:37.000Z",
+      "checkedAt": "2026-11-11T00:37:37.000Z",
+      "status": "滚动招聘，招满即止",
+      "verification": "学院官网公告；招聘系统岗位状态待核",
+      "deadline": null,
+      "deadlineLabel": "未公布固定截止日，招满即止",
+      "summary": "北京；普通教师2名，招聘对象包括博士后出站人员、调动和留学回国人员。研究方向为档案学、数字人文、数据管理；专业列信息资源管理、计算机科学与技术、管理科学与工程、中国史、中国语言文学，未列经济学。博士；讲师一般不超38岁、副教授40岁、教授45岁；经济学专业能否申报待核。"
+    },
+    {
       "id": "ruc-finance-research-operations-2026",
       "title": "中国人民大学财政金融学院：科研运营管理岗",
       "sourceName": "中国人民大学人事部",
@@ -39,7 +53,7 @@ window.RADAR_PUBLIC_JOBS={
       "publishedAt": "2026-11-03",
       "firstSeenAt": "2026-11-05T08:09:00+08:00",
       "checkedAt": "2026-11-10T00:23:06.000Z",
-      "status": "报名截止临近",
+      "status": "明日17时报名截止",
       "verification": "学校人事部官网及非应届岗位附件",
       "deadline": "2026-11-12",
       "deadlineLabel": "17时网上报名截止",
@@ -252,6 +266,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-10T00:23:06.000Z",
       "summary": "部分检索社科院、人大、北师大、农大、中央民大及相关会议；核实人大非应届招聘岗位附件。其他岗位系统、平台状态及部分会议原文未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-11T00:37:37.000Z",
+      "summary": "部分检索社科院、人大、北师大、农大、中央民大和相关会议；新增人大信息资源管理学院教师岗，部分岗位系统、平台状态及会议本届原文未全面核验。"
     }
   ]
 };
