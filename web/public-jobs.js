@@ -52,8 +52,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://hr.ruc.edu.cn/bsjg/bwryglbgs/bwtzgg/176e33ad4d984dd3ac950994d88b18f1.htm",
       "publishedAt": "2026-11-03",
       "firstSeenAt": "2026-11-05T08:09:00+08:00",
-      "checkedAt": "2026-11-10T00:23:06.000Z",
-      "status": "明日17时报名截止",
+      "checkedAt": "2026-11-12T00:54:41.000Z",
+      "status": "今天17时报名截止",
       "verification": "学校人事部官网及非应届岗位附件",
       "deadline": "2026-11-12",
       "deadlineLabel": "17时网上报名截止",
@@ -270,6 +270,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-11T00:37:37.000Z",
       "summary": "部分检索社科院、人大、北师大、农大、中央民大和相关会议；新增人大信息资源管理学院教师岗，部分岗位系统、平台状态及会议本届原文未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-12T00:54:41.000Z",
+      "summary": "部分检索社科院、人大、北师大、农大、民大和相关会议；复核人大管理和专业技术岗位公告。部分岗位系统、平台状态及会议本届原文仍未全面核验。"
     }
   ]
 };
