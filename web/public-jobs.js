@@ -53,7 +53,7 @@ window.RADAR_PUBLIC_JOBS={
       "publishedAt": "2026-11-03",
       "firstSeenAt": "2026-11-05T08:09:00+08:00",
       "checkedAt": "2026-11-12T00:54:41.000Z",
-      "status": "今天17时报名截止",
+      "status": "公告所列报名时间已结束",
       "verification": "学校人事部官网及非应届岗位附件",
       "deadline": "2026-11-12",
       "deadlineLabel": "17时网上报名截止",
@@ -80,8 +80,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://nsd.pku.edu.cn/sylm/xw/024418697d1c4c21b09deafb7e90c83e.htm",
       "publishedAt": "2026-10-02",
       "firstSeenAt": "2026-11-01T08:22:14+08:00",
-      "checkedAt": "2026-11-06T00:55:07.000Z",
-      "status": "公告所列申请截止日期为11月20日",
+      "checkedAt": "2026-11-13T00:45:44.000Z",
+      "status": "距离申请截止7天",
       "verification": "学院官网",
       "deadline": "2026-11-20",
       "deadlineLabel": "北京时间申请截止",
@@ -274,6 +274,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-12T00:54:41.000Z",
       "summary": "部分检索社科院、人大、北师大、农大、民大和相关会议；复核人大管理和专业技术岗位公告。部分岗位系统、平台状态及会议本届原文仍未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-13T00:45:44.000Z",
+      "summary": "部分检索社科院人口所、世经所及人大、北师大、农大、民大招聘和会议；复核北大国发院教师公告，部分岗位系统、平台状态和会议原文仍未全面核验。"
     }
   ]
 };
