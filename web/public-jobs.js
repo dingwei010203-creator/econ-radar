@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-labor-faculty-2027-repost",
+      "title": "中国人民大学劳动人事学院：教师岗位招聘线索",
+      "sourceName": "高校人才网（转载）",
+      "url": "https://m.gaoxiaojob.com/job/detail/2394083.html",
+      "publishedAt": null,
+      "firstSeenAt": "2026-11-14T00:05:46.586Z",
+      "checkedAt": "2026-11-14T00:05:46.586Z",
+      "status": "转载待官方核验",
+      "verification": "转载待官方核验；11月12日为转载平台发布日期，学校原文和招聘系统待核",
+      "deadline": "2026-12-31",
+      "deadlineLabel": "转载平台所列截止日期，待官方核实",
+      "summary": "北京；转载称教师岗4人，博士，研究生专业参考包括理论经济学、应用经济学等，列事业编制；要求顶级期刊高质量研究成果及研究潜力。应届、博士后出站、年龄、户籍及其他限制待官方确认，岗位方向和是否仍开放待核。"
+    },
+    {
       "id": "ruc-info-resources-faculty-2027",
       "title": "中国人民大学信息资源管理学院：2027教师岗位",
       "sourceName": "中国人民大学信息资源管理学院",
@@ -81,7 +95,7 @@ window.RADAR_PUBLIC_JOBS={
       "publishedAt": "2026-10-02",
       "firstSeenAt": "2026-11-01T08:22:14+08:00",
       "checkedAt": "2026-11-13T00:45:44.000Z",
-      "status": "距离申请截止7天",
+      "status": "公告所列11月20日申请截止",
       "verification": "学院官网",
       "deadline": "2026-11-20",
       "deadlineLabel": "北京时间申请截止",
@@ -278,6 +292,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-13T00:45:44.000Z",
       "summary": "部分检索社科院人口所、世经所及人大、北师大、农大、民大招聘和会议；复核北大国发院教师公告，部分岗位系统、平台状态和会议原文仍未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-14T00:05:46.586Z",
+      "summary": "部分检索人大招聘、国考与相关会议；记录劳动人事学院教师岗转载线索，招聘系统、其他重点单位及部分会议原文未全面核验。"
     }
   ]
 };
