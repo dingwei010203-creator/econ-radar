@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-econ-faculty-2-2027-repost",
+      "title": "中国人民大学经济学院：教师岗位2",
+      "sourceName": "高校人才网（转载）",
+      "url": "https://www.gaoxiaojob.com/job/detail/2394087.html",
+      "publishedAt": null,
+      "firstSeenAt": "2026-11-15T08:20:00+08:00",
+      "checkedAt": "2026-11-15T08:20:00+08:00",
+      "status": "转载待官方核验",
+      "verification": "转载待官方核验；学校原文及招聘系统状态未核实，11月12日为平台发布日",
+      "deadline": "2026-12-31",
+      "deadlineLabel": "平台所列日期，待官方核实；另称滚动招聘、招满即止",
+      "summary": "北京；转载称教师教学科研岗4人，博士，理论经济学或应用经济学，从事经济学方向研究，招聘对象包括博士后出站人员、调动人员及留学回国人员，列事业编制。年龄、户籍、出站时间和具体条件待官方核验。"
+    },
+    {
       "id": "ruc-labor-faculty-2027-repost",
       "title": "中国人民大学劳动人事学院：教师岗位招聘线索",
       "sourceName": "高校人才网（转载）",
@@ -296,6 +310,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-14T00:05:46.586Z",
       "summary": "部分检索人大招聘、国考与相关会议；记录劳动人事学院教师岗转载线索，招聘系统、其他重点单位及部分会议原文未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-15T08:20:00+08:00",
+      "summary": "部分检索重点机构招聘及会议；新增人大经济学院教师岗转载线索。校方原文、招聘系统及部分机构公告未全面核验。"
     }
   ]
 };
