@@ -52,8 +52,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://hr.ruc.edu.cn/bsjg/bwryglbgs/bwtzgg/ee77b471e47642debcc017b0d5245202.htm",
       "publishedAt": "2026-11-06",
       "firstSeenAt": "2026-11-08T00:58:05.000Z",
-      "checkedAt": "2026-11-08T00:58:05.000Z",
-      "status": "招聘公告发布",
+      "checkedAt": "2026-11-16T00:34:50.000Z",
+      "status": "公告所列11月30日前接收材料",
       "verification": "学校人事部官网",
       "deadline": "2026-11-30",
       "deadlineLabel": "公告所列简历接收截止",
@@ -64,7 +64,7 @@ window.RADAR_PUBLIC_JOBS={
       "title": "中国农业大学：马克思主义理论学科2027年人才招聘",
       "sourceName": "粉笔资讯（转载）",
       "url": "https://www.fenbi.com/page/fenxiaozhaokaodetail/29/159/470276601833472",
-      "publishedAt": "2026-11-06",
+      "publishedAt": null,
       "firstSeenAt": "2026-11-08T00:58:05.000Z",
       "checkedAt": "2026-11-08T00:58:05.000Z",
       "status": "转载待官方核验",
@@ -92,7 +92,7 @@ window.RADAR_PUBLIC_JOBS={
       "title": "中国人民大学：2027年度人才引进和教师招聘总公告线索",
       "sourceName": "粉笔资讯（转载）",
       "url": "https://beijing.fenbi.com/zhaokao/detail/0/470231952944128",
-      "publishedAt": "2026-11-04",
+      "publishedAt": null,
       "firstSeenAt": "2026-11-05T08:09:00+08:00",
       "checkedAt": "2026-11-05T08:09:00+08:00",
       "status": "转载待官方核验",
@@ -209,10 +209,10 @@ window.RADAR_PUBLIC_JOBS={
       "id": "guokao-2027",
       "title": "2027年度国考：报名确认与后续考试",
       "sourceName": "国家税务总局上海市税务局 · 报考指南",
-      "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481764.html",
+      "url": "https://shanghai.chinatax.gov.cn/xxgk/rsxx/202610/t481764.html",
       "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-06T00:55:07.000Z",
+      "checkedAt": "2026-11-16T00:34:50.000Z",
       "status": "报名确认及缴费已结束；待打印准考证",
       "verification": "官方转载报考指南",
       "deadline": "2026-11-06",
@@ -314,6 +314,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-15T08:20:00+08:00",
       "summary": "部分检索重点机构招聘及会议；新增人大经济学院教师岗转载线索。校方原文、招聘系统及部分机构公告未全面核验。"
+    },
+    {
+      "checkedAt": "2026-11-16T00:34:50.000Z",
+      "summary": "部分检索社科院、人大、北师大、农大、中央民大及会议，复核人大科研运营岗和国考准考证打印；部分学校岗位系统及会议原文未全面核实。"
     }
   ]
 };
