@@ -108,8 +108,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://nsd.pku.edu.cn/sylm/xw/024418697d1c4c21b09deafb7e90c83e.htm",
       "publishedAt": "2026-10-02",
       "firstSeenAt": "2026-11-01T08:22:14+08:00",
-      "checkedAt": "2026-11-13T00:45:44.000Z",
-      "status": "公告所列11月20日申请截止",
+      "checkedAt": "2026-11-17T00:50:11.000Z",
+      "status": "临近截止：11月20日",
       "verification": "学院官网",
       "deadline": "2026-11-20",
       "deadlineLabel": "北京时间申请截止",
@@ -318,6 +318,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-16T00:34:50.000Z",
       "summary": "部分检索社科院、人大、北师大、农大、中央民大及会议，复核人大科研运营岗和国考准考证打印；部分学校岗位系统及会议原文未全面核实。"
+    },
+    {
+      "checkedAt": "2026-11-17T00:50:11.000Z",
+      "summary": "部分检索社科院、人大、北师大、农大、中央民大及相关会议，复核北大国发院教师招聘截止时间；部分学校招聘系统及会议原文未全面核实。"
     }
   ]
 };
