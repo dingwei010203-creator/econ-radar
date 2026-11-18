@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-isf-joe-2027",
+      "title": "中国人民大学国际金融学院：助理教授、副教授、教授",
+      "sourceName": "AEA JOE（用人单位发布）",
+      "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478398",
+      "publishedAt": "2026-10-30",
+      "firstSeenAt": "2026-11-18T07:32:14.713Z",
+      "checkedAt": "2026-11-18T07:32:14.713Z",
+      "status": "公告所列截止日期尚未到",
+      "verification": "AEA JOE招聘公告；博士后出站、户籍和聘任条件待单位确认",
+      "deadline": "2026-12-31",
+      "deadlineLabel": "北京时间12月31日完整材料截止",
+      "summary": "北京；全职教师，主研究方向须从国际金融、货币经济与银行、宏观金融、资产定价、金融科技、人工智能与金融中选择。助理教授须于2027年8月前获博士；邮件提交求职信、简历、求职论文，代表作可选，3封推荐信由推荐人直接发送。博士后出站等条件未单列。"
+    },
+    {
       "id": "ruc-agri-faculty1-2027-repost",
       "title": "中国人民大学农业与农村发展学院：教师岗位1",
       "sourceName": "高校人才网（转载）",
