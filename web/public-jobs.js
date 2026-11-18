@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-agri-faculty1-2027-repost",
+      "title": "中国人民大学农业与农村发展学院：教师岗位1",
+      "sourceName": "高校人才网（转载）",
+      "url": "https://m.gaoxiaojob.com/job/detail/2394123.html",
+      "publishedAt": null,
+      "firstSeenAt": "2026-11-18T08:15:00+08:00",
+      "checkedAt": "2026-11-18T08:15:00+08:00",
+      "status": "转载待官方核验",
+      "verification": "转载待官方核验；平台11月12日发布，学校原文、系统状态及资格待核",
+      "deadline": "2026-12-31",
+      "deadlineLabel": "平台列12月31日；滚动招聘、招满即止，待官方确认",
+      "summary": "北京；转载称招聘1名博士，研究三农，参考专业为理论经济学、应用经济学、农林经济管理；对象包括博士后出站人员。事业编制、资格与当前状态待学校核实，网上系统报名。"
+    },
+    {
       "id": "bit-econ-faculty-2026",
       "title": "北京理工大学经济学院：专任教师招聘",
       "sourceName": "北京理工大学经济学院",
@@ -304,7 +318,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://nsd.pku.edu.cn/sylm/xw/024418697d1c4c21b09deafb7e90c83e.htm",
       "publishedAt": "2026-10-02",
       "firstSeenAt": "2026-11-01T08:22:14+08:00",
-      "checkedAt": "2026-11-17T00:50:11.000Z",
+      "checkedAt": "2026-11-18T08:15:00+08:00",
       "status": "临近截止：11月20日",
       "verification": "学院官网",
       "deadline": "2026-11-20",
@@ -522,6 +536,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-17T16:25:00+08:00",
       "summary": "部分核验：核对表格中北京高校AEA JOE招聘及北外、华北电力、北大教育财政所、北理工官网公告；未覆盖全部表格行及全部重点来源，完整检索时间未刷新。"
+    },
+    {
+      "checkedAt": "2026-11-18T08:15:00+08:00",
+      "summary": "部分检索：核对AEA JOE、北大国发院与人大人事部，检索社科院官网及重点单位；新增人大农发学院转载线索。重点院所、招聘系统和会议原文未全面核验，完整检索时间未刷新。"
     }
   ]
 };
