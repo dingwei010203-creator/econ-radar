@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-econ-joe-2027",
+      "title": "中国人民大学经济学院：助理教授、副教授、教授",
+      "sourceName": "AEA JOE（公告注明转自人大人事部）",
+      "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478528",
+      "publishedAt": "2026-11-16",
+      "deadline": "2026-12-01",
+      "deadlineLabel": "12月1日或招满为止",
+      "summary": "北京；经济学各领域，列数字经济、发展经济学等方向。初级岗位须2027年8月前获博士；邮件提交求职信、简历、求职论文、教学证明及3封推荐信。博士后出站、户籍及编制待确认；与学校其他岗位批次的对应关系待核。",
+      "verification": "AEA JOE公告，注明转载学校人事部；学校招聘系统具体岗位待核。",
+      "status": "公告所列日期未到",
+      "firstSeenAt": "2026-11-19T00:56:06.557Z",
+      "checkedAt": "2026-11-19T00:56:06.557Z"
+    },
+    {
       "id": "ruc-isf-joe-2027",
       "title": "中国人民大学国际金融学院：助理教授、副教授、教授",
       "sourceName": "AEA JOE（用人单位发布）",
