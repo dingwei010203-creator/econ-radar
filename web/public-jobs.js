@@ -186,6 +186,20 @@ window.RADAR_PUBLIC_JOBS={
       "summary": "所有经济学领域；申请材料含求职信、简历、教学和研究陈述、论文及3封推荐信，邮件申请。JOE字段显示11月20日截止，正文将其称为助理教授充分考虑日期。"
     },
     {
+      "id": "uibe-soe-joe-2027",
+      "title": "对外经济贸易大学经济学院：2027年预聘轨教职",
+      "sourceName": "AEA JOE（用人单位发布）",
+      "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478552&q=eNplj0EKAjEMRe_S9QgyCxceQBC8Q4htHKsxHZKOMoh3N8JUBHc_L8nPzzMcstUsg-2K3sL2GbJcMMaa7xS2MjF34Urzo2gCI9R4btTIh4q08kLcZDabfDn0636zWvehC0XzkAV5_9eJZZKqMygNP2aGd0pwKpxIrcGIknLCSmBR8Xbkb0ClSFKhCM8N8fIUeHBSOHrDH3NWp09qQL_N4-gUmV2POCx2r9cbrohgaw%2C%2C",
+      "publishedAt": "2026-11-18",
+      "firstSeenAt": "2026-11-20T06:30:40.246Z",
+      "checkedAt": "2026-11-20T06:30:40.246Z",
+      "status": "公告所列截止日期尚未到",
+      "verification": "AEA JOE招聘公告；与国际经济贸易学院为不同公告。博士后出站等具体聘任条件待单位核实。",
+      "deadline": "2026-12-24",
+      "deadlineLabel": "JOE列12月24日截止，未注明具体时刻",
+      "summary": "北京；助理教授、副教授及教授。经济学各领域均可申请，优先方向包括数字经济、政治经济学、经济史及经济思想史。初级岗位须于2027年8月前取得博士学位。求职信、简历、工作论文或发表样本、教学成效证明发至 soe@uibe.edu.cn；另需三封推荐信由推荐人发送至同一邮箱。"
+    },
+    {
       "id": "uibe-site-joe-2027",
       "title": "对外经济贸易大学国际经济贸易学院：经济学教师",
       "sourceName": "AEA JOE（用人单位发布）",
@@ -373,12 +387,12 @@ window.RADAR_PUBLIC_JOBS={
       "sourceName": "北京大学经济学院",
       "url": "https://econ.pku.edu.cn/tzgg/50170econ391389.htm",
       "firstSeenAt": "2026-10-31T08:25:50.000+08:00",
-      "checkedAt": "2026-11-17T16:25:00+08:00",
-      "status": "申请开放状态待核",
-      "verification": "学校官网及AEA JOE公告；两处截止日期口径需进一步核对",
+      "checkedAt": "2026-11-20T06:30:40.246Z",
+      "status": "公告所列日期未到；平台实际关闭时间待核",
+      "verification": "学院官网直链同一 AEA JOE 公告（2026-02_111478333）；官网页面发布日期与正文年份不一致，招聘批次以两处正文为准。",
       "deadline": "2026-11-30",
-      "deadlineLabel": "JOE列11月30日截止；官网时间口径不同待核",
-      "summary": "北京；JOE列所有经济学领域，偏好公共财政、发展等；助理教授须2027年8月前获博士。JOE列11月30日截止，提交简历、求职论文及由推荐人分别递交的3封推荐信；学校网页称11月30日北京时间8时前申请以获充分考虑，具体时限口径待核。"
+      "deadlineLabel": "11月30日；北京时间08:00前提交可获充分考虑",
+      "summary": "北京；助理教授或副教授，2027年9月入职，欢迎各经济学领域申请，偏好公共财政、发展经济学等。助理教授须最迟于2027年8月获博士。经 JOE 提交简历、求职论文及三封由推荐人单独递交的推荐信。JOE列11月30日截止，院方明确北京时间当日08:00前提交可获充分考虑。"
     },
     {
       "id": "ruc-sociology-2027",
