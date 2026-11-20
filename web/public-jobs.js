@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-finance-school-joe-2027",
+      "title": "中国人民大学财政金融学院：全领域教师招聘",
+      "sourceName": "AEA JOE（用人单位公告）",
+      "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111477927",
+      "publishedAt": "2026-09-29",
+      "firstSeenAt": "2026-11-20T00:20:52.219Z",
+      "checkedAt": "2026-11-20T00:20:52.219Z",
+      "status": "公告所列日期未到",
+      "verification": "AEA JOE公告；与财政系单独公告招聘岗位的重合关系待核，博士后出站、户籍及编制待确认。",
+      "deadline": "2026-12-01",
+      "deadlineLabel": "北京时间12月1日完整材料截止",
+      "summary": "北京；全职助理教授、副教授及教授，方向包括财政政策、国际税收、公共预算、金融、保险与精算等；申请时选一项方向。助理教授须2027年8月前取得博士。邮件提交求职信、中英文简历、求职论文、相关成果及3封推荐信，并填写在线个人信息。"
+    },
+    {
       "id": "ruc-econ-joe-2027",
       "title": "中国人民大学经济学院：助理教授、副教授、教授",
       "sourceName": "AEA JOE（公告注明转自人大人事部）",
