@@ -164,8 +164,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111477871",
       "publishedAt": "2026-09-21",
       "firstSeenAt": "2026-11-17T16:25:00+08:00",
-      "checkedAt": "2026-11-17T16:25:00+08:00",
-      "status": "公告所列申请日期尚未到",
+      "checkedAt": "2026-11-21T00:40:16.539Z",
+      "status": "临近截止：11月22日",
       "verification": "AEA JOE招聘公告；出站、户籍及具体聘任条件以单位核实为准",
       "deadline": "2026-11-22",
       "deadlineLabel": "申请截止",
@@ -374,8 +374,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://nsd.pku.edu.cn/sylm/xw/024418697d1c4c21b09deafb7e90c83e.htm",
       "publishedAt": "2026-10-02",
       "firstSeenAt": "2026-11-01T08:22:14+08:00",
-      "checkedAt": "2026-11-18T08:15:00+08:00",
-      "status": "临近截止：11月20日",
+      "checkedAt": "2026-11-21T00:40:16.539Z",
+      "status": "公告截止日期已过，延期情况待核",
       "verification": "学院官网",
       "deadline": "2026-11-20",
       "deadlineLabel": "北京时间申请截止",
@@ -596,6 +596,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-18T08:15:00+08:00",
       "summary": "部分检索：核对AEA JOE、北大国发院与人大人事部，检索社科院官网及重点单位；新增人大农发学院转载线索。重点院所、招聘系统和会议原文未全面核验，完整检索时间未刷新。"
+    },
+    {
+      "checkedAt": "2026-11-21T00:40:16.539Z",
+      "summary": "部分检索：核对北大国发院、新结构经济学研究院及人大人事网站，检索AEA JOE与重点院所；社科院各所、学校招聘系统及会议来源仍有核验缺口，完整检索时间未刷新。"
     }
   ]
 };
