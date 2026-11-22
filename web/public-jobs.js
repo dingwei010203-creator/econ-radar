@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "ruc-agri-faculty2-2027-repost",
+      "title": "中国人民大学农业与农村发展学院：教师岗位2",
+      "sourceName": "高校人才网（转载）",
+      "url": "https://m.gaoxiaojob.com/job/detail/2394124.html",
+      "publishedAt": null,
+      "firstSeenAt": "2026-11-22T00:49:16.633Z",
+      "checkedAt": "2026-11-22T00:49:16.633Z",
+      "status": "转载待官方核验",
+      "verification": "转载待官方核验；11月12日为平台发布日，学校原文、系统状态和编制待核。",
+      "deadline": "2026-12-31",
+      "deadlineLabel": "平台列12月31日，另称滚动招聘、招满即止；待官方核验",
+      "summary": "转载称工作地点北京，2名博士，研究人工智能与农业农村发展交叉、土地政策；参考专业包括应用经济学、农林经济管理等。招聘对象列博士后出站、调动和海外留学回国人员；具体专业、工作地点、出站、年龄户籍和编制须核实，网上系统申请。"
+    },
+    {
       "id": "ruc-finance-school-joe-2027",
       "title": "中国人民大学财政金融学院：全领域教师招聘",
       "sourceName": "AEA JOE（用人单位公告）",
@@ -164,8 +178,8 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111477871",
       "publishedAt": "2026-09-21",
       "firstSeenAt": "2026-11-17T16:25:00+08:00",
-      "checkedAt": "2026-11-21T00:40:16.539Z",
-      "status": "临近截止：11月22日",
+      "checkedAt": "2026-11-22T00:49:16.633Z",
+      "status": "公告列11月22日截止；具体截止时刻及当前系统状态待核",
       "verification": "AEA JOE招聘公告；出站、户籍及具体聘任条件以单位核实为准",
       "deadline": "2026-11-22",
       "deadlineLabel": "申请截止",
@@ -600,6 +614,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-21T00:40:16.539Z",
       "summary": "部分检索：核对北大国发院、新结构经济学研究院及人大人事网站，检索AEA JOE与重点院所；社科院各所、学校招聘系统及会议来源仍有核验缺口，完整检索时间未刷新。"
+    },
+    {
+      "checkedAt": "2026-11-22T00:49:16.633Z",
+      "summary": "部分检索：核对北大JOE、人大招聘网页及北师大公告，检索社科院与会议线索；人大农发教师岗位2为转载待核，未完成所有院系及招聘系统核验。"
     }
   ]
 };
