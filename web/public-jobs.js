@@ -4,6 +4,20 @@ window.RADAR_PUBLIC_JOBS={
   "lastCompletedAt": "2026-11-01T08:22:14+08:00",
   "items": [
     {
+      "id": "cueb-fifth-international-young-scholars-forum-2026",
+      "title": "首都经济贸易大学第五届国际青年学者论坛",
+      "sourceName": "学术桥高校引才列表（正文待核）",
+      "url": "https://mp.weixin.qq.com/s/4Fkiqh0fl9YFntvAxNqrqQ",
+      "publishedAt": null,
+      "firstSeenAt": "2026-11-22T16:54:12.654Z",
+      "checkedAt": "2026-11-22T16:54:12.657Z",
+      "status": "论坛线索待核",
+      "verification": "学术桥高校引才列表列同名论坛，标注2026年11月6日；微信原文无法读取，内容及当前状态待核。该日期为平台列表日期，非已核实的原公告发布日期。",
+      "deadline": null,
+      "deadlineLabel": "报名截止日期待核",
+      "summary": "北京高校青年学者论坛线索；报名条件、博士后资格、活动安排、截止日期及报名方式尚待核实。论坛与现有首经贸国际经济管理学院教师招聘为不同线索，不推断二者对应关系。"
+    },
+    {
       "id": "ruc-agri-faculty2-2027-repost",
       "title": "中国人民大学农业与农村发展学院：教师岗位2",
       "sourceName": "高校人才网（转载）",
