@@ -6,3 +6,120 @@
 /* Keep the recruitment entry easy to find, including on narrow screens. */
 nav button.nav-featured { font-weight: 700; border: 1px solid #bdd3c3; background: #e3ece2; color: var(--ink); }
 nav button.nav-featured.active { color: #fff; border-color: var(--ink); background: var(--ink); }
+
+.agenda {
+  --agenda-quiet: #526860;
+}
+.agenda-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 22px;
+  margin-bottom: 14px;
+  color: var(--agenda-quiet);
+  font-size: 14px;
+}
+.agenda-summary strong { color: var(--ink); }
+.agenda-toolbar,
+.agenda-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.agenda-toolbar {
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.agenda-section {
+  margin-bottom: 16px;
+  border-top: 1px solid var(--line);
+}
+.agenda-section h2,
+.agenda-section summary {
+  margin: 0;
+  padding: 10px 0;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 650;
+}
+.agenda-section summary { cursor: pointer; }
+.agenda-section small {
+  margin-left: 6px;
+  color: var(--agenda-quiet);
+  font-size: 14px;
+  font-weight: 400;
+}
+.agenda-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+.agenda-row {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr) 6.5rem 9rem;
+  align-items: center;
+  gap: 10px 16px;
+  min-height: 62px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.agenda-date {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.agenda-time,
+.agenda-item span {
+  display: block;
+  color: var(--agenda-quiet);
+  font-size: 14px;
+  font-weight: 400;
+}
+.agenda-item {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.agenda-item strong { font-size: 16px; }
+.agenda-status {
+  justify-self: end;
+  font-size: 14px;
+}
+.agenda-actions {
+  grid-column: 4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.agenda-actions button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.agenda-empty {
+  margin: 0;
+  padding: 12px 14px;
+  background: #fff;
+  color: var(--agenda-quiet);
+}
+.agenda-more { margin-top: 8px; }
+
+@media (max-width: 900px) {
+  .agenda-toolbar { row-gap: 12px; }
+  .agenda-controls button { padding: 6px 9px; }
+  .agenda-row {
+    grid-template-columns: max-content minmax(0, 1fr);
+    align-items: start;
+    gap: 5px 10px;
+    padding: 10px;
+  }
+  .agenda-status {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+  }
+  .agenda-actions {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}

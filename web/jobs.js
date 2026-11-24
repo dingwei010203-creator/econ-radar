@@ -57,8 +57,80 @@ const conferenceList=(window.RADAR_CONFERENCES||[]).filter(x=>['conference','jou
 let scheduleRange='week',plannerKind='events',plannerEditing=null;
 function mergePlanner(a=[],b=[]){return [...new Map([...a,...b].map(x=>[x.id,x])).values()];}
 function agenda(){return [...C.tasks(state.jobs,C.today(),Infinity).map(t=>({...t,title:t.school,label:t.label,kind:'job'})),...(state.events||[]).filter(x=>!x.done).map(x=>({...x,label:x.category||'日程',days:C.days(x.date),kind:'event'})),...(state.consultations||[]).filter(x=>x.followupAt).map(x=>({id:x.id,title:x.person,date:x.followupAt,label:x.nextAction||'咨询后续跟进',days:C.days(x.followupAt),kind:'consultation'}))].sort((a,b)=>a.date.localeCompare(b.date)||(a.time||'').localeCompare(b.time||''));}
-function agendaRow(t){return `<div class="task"><span class="task-date">${esc(t.date.slice(5))}<small>${esc(t.time||'')}</small></span><div class="grow"><strong>${esc(t.title)}</strong><div class="muted">${esc(t.label)}</div></div><span class="pill ${t.days<0?'red':t.days===0?'warn':''}">${t.days<0?'逾期 '+(-t.days)+' 天':t.days===0?'今天':t.days+' 天后'}</span>${t.kind==='job'?`<button data-edit="${esc(t.id)}">查看</button>`:`<button data-plan-edit="${esc(t.id)}" data-kind="${t.kind==='event'?'events':'consultations'}">查看</button>`}${t.kind==='event'?`<button class="subtle" data-plan-done="${esc(t.id)}">完成</button>`:''}</div>`;}
-function overview(){const all=agenda(),n=scheduleRange==='today'?0:scheduleRange==='week'?7:30,rows=all.filter(t=>scheduleRange==='all'||(t.days<=n&&(scheduleRange!=='today'||t.days===0)));const due=all.filter(t=>t.days<0).length;return `<div class="stats">${[['今天',all.filter(t=>t.days===0).length,'今天需要处理'],['未来七天',all.filter(t=>t.days>=0&&t.days<=7).length,'安排与截止'],['待跟进',due,'已逾期事项'],['进行中申请',state.jobs.filter(x=>!['已结束','已获 Offer'].includes(x.stage)).length,'求职进展']].map(([a,b,c])=>`<div class="stat"><small>${a}</small><strong>${b}</strong><em>${c}</em></div>`).join('')}</div><div class="toolbar range-tabs">${[['today','今天'],['week','未来七天'],['month','未来三十天'],['all','全部待办']].map(([v,l])=>`<button data-range="${v}" class="${v===scheduleRange?'primary':''}">${l}</button>`).join('')}<span class="spacer"></span><button class="primary" data-plan-new="events">＋ 新建日程</button><button data-plan-new="consultations">＋ 记一次咨询</button></div><div class="grid"><section class="panel"><div class="panel-head"><h2>日程与跟进</h2><span class="pill">${rows.length} 项</span></div>${rows.length?rows.map(agendaRow).join(''):'<div class="empty"><strong>这段时间暂无安排</strong>新建日程，或填写申请的截止日、面试和跟进日期。</div>'}<details class="completed"><summary>已完成的日程（${(state.events||[]).filter(x=>x.done).length}）</summary>${(state.events||[]).filter(x=>x.done).map(x=>`<div class="task"><span>${esc(x.date)}</span><strong class="grow">${esc(x.title)}</strong><button data-plan-edit="${esc(x.id)}" data-kind="events">编辑</button><button data-plan-done="${esc(x.id)}">恢复</button></div>`).join('')}</details></section><div><section class="panel"><div class="panel-head"><h2>近期征稿</h2><button class="subtle" data-go="conferences">全部 →</button></div>${conferenceList.filter(x=>C.validDate(x.deadline)&&C.days(x.deadline)>=0&&x.status!=='closed').sort((a,b)=>a.deadline.localeCompare(b.deadline)).slice(0,4).map(x=>`<div class="upcoming"><span class="pill">${esc(x.deadline)}</span><h3>${esc(x.title)}</h3><button data-conference-plan="${esc(x.id)}">加入日程</button></div>`).join('')||'<p class="muted">暂无仍开放的征稿记录。</p>'}<p class="muted">沿用已有快照，最新要求请查看通知。</p></section><section class="panel"><div class="panel-head"><h2>最近咨询</h2><button class="subtle" data-go="consultations">全部 →</button></div>${[...(state.consultations||[])].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,3).map(x=>`<div class="upcoming"><h3>${esc(x.person)} <small class="muted">${esc(x.date)}</small></h3><p>${esc(x.topic||x.institution)}</p><button data-plan-edit="${esc(x.id)}" data-kind="consultations">查看记录</button></div>`).join('')||'<p class="muted">记录一次交流，保留要点与下一步。</p>'}</section></div></div>`;}
+function agendaRow(item, actions, showStatus = false) {
+  const {date, time, title, label, days} = item;
+  const status = days < 0 ? `逾期 ${-days} 天` : days === 0 ? "今天" : `${days} 天后`;
+  return `<li class="agenda-row">
+    <div class="agenda-date">${date ? `<time datetime="${esc(date)}">${esc(date)}</time>` : "日期未填"}${time ? `<time class="agenda-time" datetime="${esc(time)}">${esc(time)}</time>` : ""}</div>
+    <div class="agenda-item"><strong>${esc(title)}</strong>${label ? `<span>${esc(label)}</span>` : ""}</div>
+    ${showStatus ? `<span class="agenda-status pill ${days < 0 ? "red" : days === 0 ? "warn" : ""}">${status}</span>` : ""}
+    <div class="agenda-actions">${actions}</div>
+  </li>`;
+}
+
+function pendingAgendaRow(item) {
+  const id = esc(item.id);
+  const kind = item.kind === "event" ? "events" : "consultations";
+  const view = item.kind === "job" ? `data-edit="${id}"` : `data-plan-edit="${id}" data-kind="${kind}"`;
+  const complete = item.kind === "event" ? `<button class="subtle" data-plan-done="${id}">完成</button>` : "";
+  return agendaRow(item, `<button ${view}>查看</button>${complete}`, true);
+}
+
+function overview() {
+  const all = agenda();
+  const upcoming = all.filter(item => item.days >= 0);
+  const overdue = all.filter(item => item.days < 0);
+  const rangeDays = {today: 0, week: 7, month: 30, all: Infinity};
+  const visible = upcoming.filter(item => item.days <= rangeDays[scheduleRange]);
+  const completed = state.events.filter(item => item.done).sort((a, b) => b.date.localeCompare(a.date));
+  const calls = conferenceList.filter(item => C.validDate(item.deadline) && C.days(item.deadline) >= 0 && item.status !== "closed")
+    .sort((a, b) => a.deadline.localeCompare(b.deadline)).slice(0, 4);
+  const recentConsultations = [...state.consultations].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+  const activeJobs = state.jobs.filter(item => !["已结束", "已获 Offer"].includes(item.stage)).length;
+  const ranges = [["today", "今天"], ["week", "未来七天"], ["month", "未来三十天"], ["all", "全部待办"]];
+  return `<div class="agenda">
+    <div class="agenda-summary">
+      <span>今天 <strong>${upcoming.filter(item => item.days === 0).length}</strong></span>
+      <span>未来七天 <strong>${upcoming.filter(item => item.days <= 7).length}</strong></span>
+      <span>已逾期 <strong>${overdue.length}</strong></span>
+      <span>进行中申请 <strong>${activeJobs}</strong></span>
+    </div>
+    <div class="agenda-toolbar">
+      <div class="agenda-controls" role="group" aria-label="日程范围">
+        ${ranges.map(([range, label]) => `<button data-range="${range}" aria-pressed="${range === scheduleRange}"${range === scheduleRange ? ' class="primary"' : ""}>${label}</button>`).join("")}
+      </div>
+      <div class="agenda-controls">
+        <button class="primary" data-plan-new="events">＋ 新建日程</button>
+        <button data-plan-new="consultations">＋ 记一次咨询</button>
+      </div>
+    </div>
+    <section class="agenda-section" aria-labelledby="agenda-upcoming">
+      <h2 id="agenda-upcoming">待办日程 <small>${visible.length} 项</small></h2>
+      ${visible.length ? `<ul class="agenda-list" role="list">${visible.map(pendingAgendaRow).join("")}</ul>` : '<p class="agenda-empty">这段时间暂无待办日程。</p>'}
+    </section>
+    ${scheduleRange !== "today" && overdue.length ? `<section class="agenda-section" aria-labelledby="agenda-overdue">
+      <h2 id="agenda-overdue">逾期未处理 <small>${overdue.length} 项</small></h2>
+      <ul class="agenda-list" role="list">${overdue.map(pendingAgendaRow).join("")}</ul>
+    </section>` : ""}
+    <details class="agenda-section">
+      <summary>已完成的日程 <small>${completed.length} 项</small></summary>
+      ${completed.length ? `<ul class="agenda-list" role="list">${completed.map(item => agendaRow({...item, label: item.category},
+        `<button data-plan-edit="${esc(item.id)}" data-kind="events">编辑</button><button data-plan-done="${esc(item.id)}">恢复</button>`)).join("")}</ul>` : '<p class="agenda-empty">暂无已完成的日程。</p>'}
+    </details>
+    <details class="agenda-section">
+      <summary>近期征稿</summary>
+      ${calls.length ? `<ul class="agenda-list" role="list">${calls.map(item => agendaRow({title: item.title, date: item.deadline, label: "投稿截止"},
+        `<button data-conference-plan="${esc(item.id)}">加入日程</button>`)).join("")}</ul>` : '<p class="agenda-empty">暂无仍开放的征稿记录。</p>'}
+      <button class="subtle agenda-more" data-go="conferences">全部会议与征稿</button>
+    </details>
+    <details class="agenda-section">
+      <summary>最近咨询</summary>
+      ${recentConsultations.length ? `<ul class="agenda-list" role="list">${recentConsultations.map(item => agendaRow({...item, title: item.person, label: item.topic || item.institution},
+        `<button data-plan-edit="${esc(item.id)}" data-kind="consultations">查看记录</button>`)).join("")}</ul>` : '<p class="agenda-empty">暂无咨询记录。</p>'}
+      <button class="subtle agenda-more" data-go="consultations">全部咨询记录</button>
+    </details>
+  </div>`;
+}
 function consultations(){const rows=(state.consultations||[]).filter(matches).sort((a,b)=>b.date.localeCompare(a.date));return `<div class="toolbar"><button class="primary" data-plan-new="consultations">＋ 新建咨询记录</button></div>`+toolbar(null,'搜索咨询对象、单位、主题或原始记录…')+`<div class="cards">${rows.map(x=>`<article class="card"><div class="panel-head"><h3>${esc(x.person)}</h3><span class="pill">${esc(x.date||'日期未填')}</span></div><p class="muted">${esc(x.institution)}</p><h3>${esc(x.topic)}</h3><p class="record-text">${esc(x.notes)}</p>${x.nextAction?`<p><strong>下一步：</strong>${esc(x.nextAction)}</p>`:''}${x.followupAt?`<p class="muted">跟进日期 ${esc(x.followupAt)}</p>`:''}<button data-plan-edit="${esc(x.id)}" data-kind="consultations">编辑 / 跟进</button></article>`).join('')}</div>${rows.length?'':'<div class="panel empty"><strong>把一次有用的交流记下来</strong>记录咨询对象、日期和原始要点；需要跟进时填写下一步与跟进日期。</div>'}`;}
 function conferences(){const rows=conferenceList.filter(matches).filter(x=>!filter||(filter==='仍可投稿'?C.validDate(x.deadline)&&C.days(x.deadline)>=0&&x.status!=='closed':filter==='重点关注'?x.priority==='core':C.validDate(x.deadline)&&C.days(x.deadline)<0||x.status==='closed')).sort((a,b)=>(a.deadline||'9999').localeCompare(b.deadline||'9999'));return `<div class="notice">会议信息沿用已有快照；加入日程前请核对原通知的日期和要求。<a href="conferences.html">打开完整会议页 ↗</a></div>`+toolbar(['仍可投稿','重点关注','历史记录'],'搜索会议、机构、主题或期刊…')+`<div class="cards">${rows.map(x=>`<article class="card"><span class="pill ${C.days(x.deadline)<0?'':'warn'}">${esc(x.deadline||'截止待确认')}</span><h3>${esc(x.title)}</h3><p>${esc(x.location)} · ${esc(x.meetingDates)}</p><p class="muted">${esc(x.relationship)}</p><p>${esc(x.journals.join(' · ')||'未列明期刊支持')}</p><p class="muted">${esc(x.deadlineNote)}</p><div class="card-actions">${link(x.noticeUrl,'查看通知 ↗')}<button data-conference-plan="${esc(x.id)}">加入日程</button></div></article>`).join('')}</div>${rows.length?'':'<div class="panel empty">没有匹配的会议</div>'}`;}
 function plannerOpen(kind,item={}){plannerKind=kind;plannerEditing={id:C.id(),...item};const event=kind==='events',fields=event?[['title','日程名称 *','text'],['date','日期 *','date'],['time','时间','time'],['category','类别','category'],['jobId','关联申请','job'],['notes','备注与准备事项','textarea']]:[['person','咨询对象 *','text'],['date','咨询日期','date'],['institution','单位 / 机构','text'],['topic','交流主题','text'],['jobId','关联申请','job'],['notes','原始要点 / 交流记录','textarea'],['nextAction','下一步','text'],['followupAt','跟进日期','date']];$('#planner-title').textContent=event?'日程安排':'咨询记录';$('#planner-fields').innerHTML=fields.map(([k,l,t])=>`<label class="${t==='textarea'?'wide':''}">${l}${t==='textarea'?`<textarea name="${k}" rows="5">${esc(item[k])}</textarea>`:t==='job'?`<select name="${k}"><option value="">不关联</option>${state.jobs.map(j=>`<option value="${esc(j.id)}" ${j.id===item[k]?'selected':''}>${esc(j.school+' · '+j.role)}</option>`).join('')}</select>`:t==='category'?`<select name="${k}">${['求职','会议投稿','参会','研究','咨询','其他'].map(v=>`<option ${v===item[k]?'selected':''}>${v}</option>`).join('')}</select>`:`<input name="${k}" type="${t}" value="${esc(item[k])}" ${k==='title'||k==='person'||event&&k==='date'?'required':''} maxlength="20000">`}</label>`).join('');$('#planner-delete').hidden=!(state[kind]||[]).some(x=>x.id===item.id);$('#planner-error').textContent='';$('#planner-editor').showModal();}
