@@ -1,8 +1,36 @@
 /* Public recruitment information only. Do not add personal records. */
 window.RADAR_PUBLIC_JOBS={
   "version": 1,
-  "lastCompletedAt": "2026-11-24T00:59:31Z",
+  "lastCompletedAt": "2026-11-25T00:29:19Z",
   "items": [
+    {
+      "id": "ruc-sard-joe-2027-111478595",
+      "title": "中国人民大学农业与农村发展学院：助理教授、副教授、教授",
+      "sourceName": "AEA JOE（用人单位发布）",
+      "url": "https://swlb1.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478595&q=eNplj91qAkEMhd8l1xaWhRb0AQpC3yHEmbgdGzNLMqss4rsbwSmF3p18XCc_XCc3-Creik7-We0MuxsURUqtXFwYdrqIbOCH12u1jM5k6btT52iq2ssTS5fFfYlhGIfx420YYQPVylSUZP_PSXXRZisaT3-WOV0447FKZvMOE2kumRqjXCej80F-AxpcJ9aGVWXtSF5PYQRnw0MY8ViwtjxTI8Vtmeeg70PImaZnri3c7w_jbV5Z",
+      "publishedAt": "2026-11-24",
+      "firstSeenAt": "2026-11-25T00:29:19Z",
+      "checkedAt": "2026-11-25T00:29:19Z",
+      "status": "按公告申请期限未到；实时受理状态待核",
+      "verification": "院系在 AEA JOE 发布的岗位原文已核；校内招聘系统和既有转载岗位的对应关系待核",
+      "deadline": "2027-01-10",
+      "deadlineLabel": "2027年1月10日（未注明时刻）",
+      "summary": "北京；博士或预计2027年获博士。面向农业经济、农村发展等领域，优先农商管理、食品及林业经济管理、三农学、农业史、农业金融与智慧农业。通过 JOE 或公告指定邮箱提交求职信、简历、求职论文和3封推荐信；JOE材料栏另列教学评价。博士后出站、户籍和编制条件未载明。"
+    },
+    {
+      "id": "pku-gsm-cice-job-market-2026",
+      "title": "北京大学光华管理学院：2026中国经济学国际年会暨经济学学术求职交流活动",
+      "sourceName": "AEA JOE（主办方活动公告）",
+      "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478358&q=eNplj91qAkEMhd8l1xaWhRbxAQpC3yHEmbgdGzNLMqss4rsbwSmF3p18XCc_XCc3-Creik7-We0MuxsURUqtXFwYdrqIbOCH12u1jM5k6btT52iq2ssTS5fFfYlhGIfx420YYQPVylSUZP_PSXXRZisaT3-WOV0447FKZvMOE2kumRqjXCej80F-AxpcJ9aGVWXtSF5PYQRnw0MY8ViwtjxTI8Vtmeeg70PImaZnri3c7w_jaV5Y",
+      "publishedAt": "2026-10-28",
+      "firstSeenAt": "2026-11-25T00:29:19Z",
+      "checkedAt": "2026-11-25T00:29:19Z",
+      "status": "学术展示征稿已结束；现场旁听登记待核",
+      "verification": "主办方在 AEA JOE 发布的学术展示与求职活动公告已核；独立活动网站未能读取",
+      "deadline": "2026-11-01",
+      "deadlineLabel": "学术展示11月1日23:59截稿；旁听截止待核",
+      "summary": "北京大学中关新园，12月12日至13日。学术展示面向正在参加经济学学术求职的候选人；现场面试由候选人与招聘单位直接安排。公告欢迎现场旁听，登记入口、截止和当前状态待核。"
+    },
     {
       "id": "pbc-2027-031",
       "title": "中国人民银行数字货币研究所：031 数字人民币政策研究岗",
@@ -332,7 +360,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111477927",
       "publishedAt": "2026-09-29",
       "firstSeenAt": "2026-11-20T00:20:52.219Z",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "临近公告所列截止；具体受理状态以用人单位为准",
       "verification": "AEA JOE公告；与财政系单独公告招聘岗位的重合关系待核，博士后出站、户籍及编制待确认。",
       "deadline": "2026-12-01",
@@ -349,9 +377,9 @@ window.RADAR_PUBLIC_JOBS={
       "deadlineLabel": "12月1日或招满为止",
       "summary": "北京；经济学各领域，列数字经济、发展经济学等方向。初级岗位须2027年8月前获博士；邮件提交求职信、简历、求职论文、教学证明及3封推荐信。博士后出站、户籍及编制待确认；与学校其他岗位批次的对应关系待核。",
       "verification": "AEA JOE公告，注明转载学校人事部；学校招聘系统具体岗位待核。",
-      "status": "公告所列日期未到",
+      "status": "临近公告所列截止；招满情况待核",
       "firstSeenAt": "2026-11-19T00:56:06.557Z",
-      "checkedAt": "2026-11-19T00:56:06.557Z"
+      "checkedAt": "2026-11-25T00:29:19Z"
     },
     {
       "id": "ruc-isf-joe-2027",
@@ -360,7 +388,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478398",
       "publishedAt": "2026-10-30",
       "firstSeenAt": "2026-11-18T07:32:14.713Z",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "公告所列截止日期尚未到",
       "verification": "AEA JOE招聘公告；博士后出站、户籍和聘任条件待单位确认",
       "deadline": "2026-12-31",
@@ -542,7 +570,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478355",
       "publishedAt": "2026-10-26",
       "firstSeenAt": "2026-11-17T16:25:00+08:00",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "临近公告所列截止；具体受理状态以用人单位为准",
       "verification": "AEA JOE招聘公告；出站、户籍及具体聘任条件以单位核实为准",
       "deadline": "2026-11-30",
@@ -556,7 +584,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478551",
       "publishedAt": "2026-11-12",
       "firstSeenAt": "2026-11-17T16:25:00+08:00",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "公告所列申请日期尚未到",
       "verification": "AEA JOE招聘公告；出站、户籍及具体聘任条件以单位核实为准",
       "deadline": "2026-12-10",
@@ -570,7 +598,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111477926",
       "publishedAt": "2026-09-29",
       "firstSeenAt": "2026-11-17T16:25:00+08:00",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "临近公告所列截止；具体受理状态以用人单位为准",
       "verification": "AEA JOE招聘公告；出站、户籍及具体聘任条件以单位核实为准",
       "deadline": "2026-12-01",
@@ -584,7 +612,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111478250",
       "publishedAt": "2026-10-20",
       "firstSeenAt": "2026-11-17T16:25:00+08:00",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "公告所列申请日期尚未到",
       "verification": "AEA JOE招聘公告；出站、户籍及具体聘任条件以单位核实为准",
       "deadline": "2026-12-10",
@@ -709,7 +737,7 @@ window.RADAR_PUBLIC_JOBS={
       "sourceName": "北京大学经济学院",
       "url": "https://econ.pku.edu.cn/tzgg/50170econ391389.htm",
       "firstSeenAt": "2026-10-31T08:25:50.000+08:00",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "临近优先考虑时间；最终关闭时间待核",
       "verification": "学院官网直链同一 AEA JOE 公告（2026-02_111478333）；官网页面发布日期与正文年份不一致，招聘批次以两处正文为准。",
       "deadline": "2026-11-30",
@@ -773,7 +801,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.csrc.gov.cn/csrc/c100082/c7671318/content.shtml",
       "publishedAt": "2026-11-17",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "公告所列网申期限未到；入口实际状态待核",
       "verification": "证监会11月17日正式公告确认截止日和网申地址；原研究院线索首次发现时间保留。",
       "deadline": "2026-12-06",
@@ -801,12 +829,12 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://shanghai.chinatax.gov.cn/xxgk/rsxx/202610/t481764.html",
       "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
+      "checkedAt": "2026-11-25T00:29:19Z",
       "status": "报名、审查及缴费已结束；准考证打印期",
-      "verification": "官方转载报考指南",
+      "verification": "上海税务局转载官方报考指南；广州人社11月23日开考提醒复核打印和考试日期",
       "deadline": "2026-11-29",
       "deadlineLabel": "准考证打印截止11月29日15:00",
-      "summary": "10月24日18:00报名截止，10月26日18:00资格审查结束，11月6日24:00确认缴费截止。已确认缴费者11月23日00:00至11月29日15:00打印准考证，11月28日下午为适用职位专业科目或外语测试，11月29日公共科目笔试；以准考证为准。"
+      "summary": "10月24日18:00报名截止，10月26日18:00资格审查结束，11月6日24:00确认缴费截止。已确认缴费者11月23日00:00至11月29日15:00打印准考证，11月28日下午为适用职位专业科目或外语测试，11月29日公共科目笔试；以准考证为准。 打印入口为 https://gwy.cpta.com.cn/。"
     },
     {
       "id": "bnu-business-2026",
@@ -931,6 +959,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-24T00:59:31Z",
       "summary": "复核中国社科院11月23日正式公告及附件、证监会及所属机构、国考公开考务信息、北京高校校院公告及可读取的 AEA JOE 原文。部分招聘系统和首经贸论坛公众号无法读取；已核实记录才更新核查时间。 补核人民银行直属事业单位原公告及岗位表、华北电力大学北京校部官方公告。"
+    },
+    {
+      "checkedAt": "2026-11-25T00:29:19Z",
+      "summary": "新增人大农业与农村发展学院11月24日 JOE 教职及北大光华学术求职活动；复核人大经济学院等 JOE 岗位及国考打印节点。核查中国社科院11月23日专业技术与管理批次公告、人大人事部和相关院系、AEA JOE 北京岗位、北大等高校渠道、证监会与国考公开通知。社科院岗位附件及网申、人大招聘系统动态职位、中证网申、部分院系原文和首经贸第五届论坛报名仍待核。"
     }
   ]
 };
