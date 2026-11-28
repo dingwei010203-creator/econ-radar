@@ -1,8 +1,22 @@
 /* Public recruitment information only. Do not add personal records. */
 window.RADAR_PUBLIC_JOBS={
   "version": 1,
-  "lastCompletedAt": "2026-11-27T00:36:31Z",
+  "lastCompletedAt": "2026-11-28T00:06:45Z",
   "items": [
+    {
+      "id": "cufe-ccfd-faculty-2027-batch1",
+      "title": "中央财经大学中国财政发展协同创新中心：财政学教学科研岗",
+      "sourceName": "中国财政发展协同创新中心官网",
+      "url": "https://ccfd.cufe.edu.cn/info/1072/6715.htm",
+      "publishedAt": "2026-11-26",
+      "status": "按公告投递期；平台实时受理待核",
+      "verification": "学校第一批公告及中心岗位、条件和材料原文已核",
+      "deadline": "2027-02-21",
+      "deadlineLabel": "2027年2月21日（未注明时刻）",
+      "summary": "北京昌平，中心地址为沙河高教园区，具体聘任校区待确认。2人，接收出站博士后、国内应届及留学回国等。博士，年龄原则上不超过38周岁（1989年1月1日及以后出生）；理论经济学或应用经济学等专业，须博士论文及已发表成果为财政学或财政史相关主题。出站博士后为非事业编预聘制，学校要求2027年10月31日前办完出站。网申另发简历、博士论文及3篇代表作。",
+      "firstSeenAt": "2026-11-28T00:06:45Z",
+      "checkedAt": "2026-11-28T00:06:45Z"
+    },
     {
       "sourceName": "中国社会科学院人事教育局（院级公告及附件1）",
       "url": "https://www.cass.cn/tongzhigonggao/202611/t20261123_6080269.shtml",
@@ -413,15 +427,15 @@ window.RADAR_PUBLIC_JOBS={
       "id": "pku-econ-hundred-schools-fair-2026",
       "title": "北京大学经济学院：第九届百所经院人才招聘会",
       "sourceName": "北京大学经济学院",
-      "url": "https://econ.pku.edu.cn/xwdt/73d622bf85bf4cecb6d58180d42b53b9.htm",
-      "publishedAt": "2026-09-23",
+      "url": "https://econ.pku.edu.cn/xwdt/032a9a4d6fb64f39a44fff9cbbe4c23e.htm",
+      "publishedAt": "2026-11-26",
       "firstSeenAt": "2026-11-24T08:52:21+08:00",
-      "checkedAt": "2026-11-24T08:52:21+08:00",
-      "status": "官方日程已核；个人报名待核",
-      "verification": "官方公告",
+      "checkedAt": "2026-11-28T00:06:45Z",
+      "status": "主办方已公布个人扫码报名及用人单位名录",
+      "verification": "北京大学经济学院11月26日正式通知已核；报名二维码见原文，未公布个人截止日及统一材料清单",
       "deadline": null,
-      "deadlineLabel": "个人报名截止未公布／待核",
-      "summary": "12月5日14:00–17:00，北京北大博雅国际酒店中华厅，经济学类博士生、博士后与招聘单位交流。个人报名入口及材料待核。"
+      "deadlineLabel": "个人报名截止未公布",
+      "summary": "北京，12月5日14:00–17:00，北大博雅国际酒店中华厅、大学堂。面向2027年8月31日前获经济学、管理学等相关专业博士学位的应届博士研究生、已毕业博士生及相关专业博士后。个人须扫描原公告二维码报名、选择入离场时间段，成功后凭短信或现场扫码核验。名录含中央民族大学经济学院、中央财经大学经济学院、首都经济贸易大学经济学院等；具体职位和条件以各单位为准。"
     },
     {
       "id": "cueb-fifth-international-young-scholars-forum-2026",
@@ -477,7 +491,7 @@ window.RADAR_PUBLIC_JOBS={
       "verification": "AEA JOE公告，注明转载学校人事部；学校招聘系统具体岗位待核。",
       "status": "临近公告所列截止；招满情况待核",
       "firstSeenAt": "2026-11-19T00:56:06.557Z",
-      "checkedAt": "2026-11-26T00:53:15Z"
+      "checkedAt": "2026-11-28T00:06:45Z"
     },
     {
       "id": "ruc-isf-joe-2027",
@@ -696,7 +710,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.aeaweb.org/joe/listing.php?JOE_ID=2026-02_111477926",
       "publishedAt": "2026-09-29",
       "firstSeenAt": "2026-11-17T16:25:00+08:00",
-      "checkedAt": "2026-11-26T00:53:15Z",
+      "checkedAt": "2026-11-28T00:06:45Z",
       "status": "临近公告所列截止；具体受理状态以用人单位为准",
       "verification": "AEA JOE招聘公告；出站、户籍及具体聘任条件以单位核实为准",
       "deadline": "2026-12-01",
@@ -899,7 +913,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://www.csrc.gov.cn/csrc/c100082/c7671318/content.shtml",
       "publishedAt": "2026-11-17",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-27T00:36:31Z",
+      "checkedAt": "2026-11-28T00:06:45Z",
       "status": "公告所列网申期限未到；入口实际状态待核",
       "verification": "证监会11月17日正式公告确认截止日和网申地址；原研究院线索首次发现时间保留。",
       "deadline": "2026-12-06",
@@ -927,7 +941,7 @@ window.RADAR_PUBLIC_JOBS={
       "url": "https://shanghai.chinatax.gov.cn/xxgk/rsxx/202610/t481764.html",
       "publishedAt": "2026-10-15",
       "firstSeenAt": "2026-10-29T11:58:01+08:00",
-      "checkedAt": "2026-11-27T00:36:31Z",
+      "checkedAt": "2026-11-28T00:06:45Z",
       "status": "报名、审查及缴费已结束；准考证打印期",
       "verification": "上海税务局转载官方报考指南；广州人社11月23日开考提醒复核打印和考试日期；北京市人社局人事考试服务频道列国考准考证入口",
       "deadline": "2026-11-29",
@@ -1069,6 +1083,10 @@ window.RADAR_PUBLIC_JOBS={
     {
       "checkedAt": "2026-11-27T00:36:31Z",
       "summary": "复核社科院11月23日公告及岗位附件，补录经济研究所科研2、3和工经所科研2；新增中国石油大学（北京）人才论坛。复核中证公告、国考北京打印入口、部分AEA JOE和北京高校校院公告。社科院与人大招聘系统、中证网申、首经贸第五届论坛报名及部分所级公告正文仍待核。"
+    },
+    {
+      "checkedAt": "2026-11-28T00:06:45Z",
+      "summary": "补录中央财经大学中国财政发展协同创新中心教研岗；按北大11月26日正式通知更新12月5日百所经院招聘会个人扫码、入场条件及名录。复核社科院院级公告、证监会原文及国考节点、AEA JOE北京职位与重点高校校院页面。部分高校及社科院动态网申、中证网申、央财校级附件和首经贸第五届论坛原公众号仍待核。"
     }
   ]
 };
